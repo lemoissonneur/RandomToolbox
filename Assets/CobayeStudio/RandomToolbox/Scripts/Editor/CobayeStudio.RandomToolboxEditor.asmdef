@@ -1,0 +1,16 @@
+{
+    "name": "CobayeStudio.RandomToolboxEditor",
+    "rootNamespace": "",
+    "references": [
+        "CobayeStudio.RandomToolbox"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

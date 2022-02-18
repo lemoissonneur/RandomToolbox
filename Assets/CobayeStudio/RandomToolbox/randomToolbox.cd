@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CobayeStudio.RandomToolbox.RandomSourceBaseSO">
+    <Position X="4.25" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACABAAEAAAAAAAAAgEAAAAAAAAEAAAAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\RandomSourceBase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="m_baseInstance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CobayeStudio.RandomToolbox.RandomSourceBase">
+    <Position X="4.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAEAAAAAAACAAAAAAAAgAAQAAAAA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\RandomSourceBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CobayeStudio.RandomToolbox.SeedGenerators">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="CobayeStudio.RandomToolbox.SeedGenerators.Generator">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\SeedGenerators.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\SeedGenerators.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CobayeStudio.RandomToolbox.SystemRandomSourceSO">
+    <Position X="7.75" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\SystemRandomSourceSO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CobayeStudio.RandomToolbox.SystemRandomSource">
+    <Position X="7.75" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAAAAAgAAAAAAAAAAAAAAQAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\SystemRandomSourceSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CobayeStudio.RandomToolbox.UnityRandomSourceSO">
+    <Position X="11.25" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\UnityRandomSourceSO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CobayeStudio.RandomToolbox.UnityRandomSource">
+    <Position X="11.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAQCAACAACAAAAACIAAAAAAAAACAAAEAABAEABBA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\UnityRandomSourceSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CobayeStudio.RandomToolbox.PartitionBase">
+    <Position X="3.75" Y="8.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="CobayeStudio.RandomToolbox.PartitionBase.ElementBase">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\Partition.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAABAgAQAAAAAAAAAAQAAAAAAAAAAABIAAA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\Partition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CobayeStudio.RandomToolbox.Partition">
+    <Position X="6.5" Y="8.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="CobayeStudio.RandomToolbox.Partition.Element" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\Partition.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\Partition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CobayeStudio.RandomToolbox.Partition&lt;T&gt;">
+    <Position X="9.25" Y="8.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="CobayeStudio.RandomToolbox.Partition&lt;T&gt;.Element" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\Partition.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAIAAAAAAQAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\Partition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CobayeStudio.RandomToolbox.PartitionManagement">
+    <Position X="0.5" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\Partition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CobayeStudio.RandomToolbox.PartitionEditRule">
+    <Position X="0.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAQAIAAAAAQAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\CobayeStudio\RandomToolbox\Scripts\Runtime\Partition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
