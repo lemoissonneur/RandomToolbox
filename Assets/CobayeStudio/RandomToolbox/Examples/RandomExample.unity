@@ -256,81 +256,40 @@ MonoBehaviour:
   basicSO: {fileID: 0}
   VectorPartition:
     Elements:
-    - Color: {r: 1, g: 0.495283, b: 0.495283, a: 1}
-      Value: 0.06991296
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
       Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.78120804, g: 1, b: 0.7028302, a: 1}
-      Value: 0.069955006
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
       Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.069312334
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073185
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073185
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073185
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073185
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073185
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073185
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073185
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073185
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.060732026
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073212
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073212
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.06073212
-      Object: {x: 0, y: 0, z: 0}
-    - Color: {r: 0.504717, g: 0.6268178, b: 1, a: 1}
-      Value: 0.062036563
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
       Object: {x: 0, y: 0, z: 0}
   VoidPartition:
     Elements:
     - Color: {r: 1, g: 0.2971698, b: 0.2971698, a: 1}
-      Value: 0.29999995
+      Value: 0.2821427
     - Color: {r: 0.3066038, g: 1, b: 0.31607953, a: 1}
-      Value: 0.70000005
+      Value: 0.7178573
   UnityObjectPartition:
     Elements:
     - Color: {r: 1, g: 0.3254717, b: 0.91470844, a: 1}
-      Value: 0.71
-      Object: {fileID: 0}
+      Value: 0.5682335
+      Object: {fileID: 11400000, guid: 5eccb79bace6a4349ba9d67aba421a76, type: 2}
     - Color: {r: 0.53120285, g: 0.15566039, b: 1, a: 1}
-      Value: 0.29000002
-      Object: {fileID: 0}
+      Value: 0.4317665
+      Object: {fileID: 11400000, guid: f80dda4e78f80914f8328a0537ea8ad0, type: 2}
   ListPartition:
     Elements:
+    - Color: {r: 1, g: 1, b: 1, a: 0.43137255}
+      Value: 0.33333334
+      Object: []
     - Color: {r: 0, g: 0, b: 0, a: 0}
-      Value: 0.5
-      Object:
-      - {fileID: 0}
-      - {fileID: 0}
+      Value: 0.33333334
+      Object: []
     - Color: {r: 0, g: 0, b: 0, a: 0}
-      Value: 0.5
-      Object:
-      - {fileID: 0}
-      - {fileID: 0}
-      - {fileID: 0}
+      Value: 0.33333334
+      Object: []
 --- !u!4 &939173745
 Transform:
   m_ObjectHideFlags: 0

@@ -51,9 +51,17 @@ namespace CobayeStudio.RandomToolbox.Example
         [Space]
         [Header("Partitions Example : ")]
         public Partition<Vector3> VectorPartition;
+        [Space]
+        [Space]
+        [Space]
         public Partition VoidPartition;
+        [Space]
+        [Space]
+        [Space]
         public Partition<Object> UnityObjectPartition;
-
+        [Space]
+        [Space]
+        [Space]
         public Partition<List<ScriptableObject>> ListPartition;
     }
 }
