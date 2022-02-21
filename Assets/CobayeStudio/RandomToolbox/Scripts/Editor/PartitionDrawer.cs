@@ -6,36 +6,58 @@ using UnityEditor;
 
 namespace CobayeStudio.RandomToolbox
 {
+    /// <summary>
+    /// Property drawer for both void and generic partition
+    /// </summary>
     [CustomPropertyDrawer(typeof(PartitionBase), true)]
     public class PartitionDrawer : PropertyDrawer
     {
+        /// <summary>
+        /// Process Rect for the editable partition graph
+        /// </summary>
         private Rect GraphRect(Rect position) => new Rect(position)
         {
             yMin = position.yMin + EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing,
             height = PartitionGUI.SliderbarHeight,
         };
 
+        /// <summary>
+        /// Process Rect for the element list of the partition
+        /// this is equal to the remaining space below the title and graph
+        /// </summary>
         private Rect ListRect(Rect position) => new Rect(position)
         {
             yMin = position.yMin + EditorGUIUtility.singleLineHeight + PartitionGUI.SliderbarHeight + EditorGUIUtility.standardVerticalSpacing * 2
         };
 
+        /// <summary>
+        /// 
+        /// </summary>
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
             SerializedProperty listProperty = property.FindPropertyRelative("Elements");
 
             float listHeight = EditorGUI.GetPropertyHeight(listProperty);
 
-            return EditorGUIUtility.singleLineHeight + PartitionGUI.SliderbarHeight + EditorGUIUtility.standardVerticalSpacing * 2 + listHeight;
+            // total height is :
+            // 1 line for the label
+            // + 2 line for the graph
+            // + wathever space we need for the list
+            return EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing
+                + PartitionGUI.SliderbarHeight + EditorGUIUtility.standardVerticalSpacing
+                + listHeight;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            SerializedProperty listProperty = property.FindPropertyRelative("Elements");
-
             EditorGUI.PrefixLabel(position, label, EditorStyles.boldLabel);
 
             EditorGUI.indentLevel++;
+
+            SerializedProperty listProperty = property.FindPropertyRelative("Elements");
 
             if (listProperty.arraySize > 0)
             {
@@ -47,6 +69,8 @@ namespace CobayeStudio.RandomToolbox
                 }
 
                 PartitionGUI.HandlePartitionGUI(EditorGUI.IndentedRect(GraphRect(position)), elements);
+
+                foreach (Element e in elements) e.ApplyChanges();
             }
             else
             {
@@ -61,24 +85,16 @@ namespace CobayeStudio.RandomToolbox
         }
     }
 
-    public class Element
+    /// <summary>
+    /// 
+    /// </summary>
+    internal class Element
     {
         public SerializedProperty Property { get; }
         public Color Color { get; }
         public string Name { get; }
-        public float Value
-        {
-            get
-            {
-                return Property.FindPropertyRelative("Value").floatValue;
-            }
 
-            set
-            {
-                Property.FindPropertyRelative("Value").floatValue = value;
-                Property.serializedObject.ApplyModifiedProperties();
-            }
-        }
+        public float Value;
 
         public Element(SerializedProperty property, int index)
         {
@@ -86,15 +102,26 @@ namespace CobayeStudio.RandomToolbox
 
             Color = Property.FindPropertyRelative("Color").colorValue;
 
-            SerializedProperty Object = Property.FindPropertyRelative("Object");
+            Name = ChooseName(Property.FindPropertyRelative("Object"), index);
 
-            Name = Object != null
-                && Object.propertyType == SerializedPropertyType.ObjectReference
-                && Object.objectReferenceValue != null?
-                Object.objectReferenceValue.name : index.ToString();
+            Value = Property.FindPropertyRelative("Value").floatValue;
+        }
+
+        public void ApplyChanges()
+        {
+            Property.FindPropertyRelative("Value").floatValue = Value;
+            Property.serializedObject.ApplyModifiedProperties();
+        }
+
+        private string ChooseName(SerializedProperty dataProperty, int index)
+        {
+            bool dataIsObjectReference = dataProperty != null
+                && dataProperty.propertyType == SerializedPropertyType.ObjectReference
+                && dataProperty.objectReferenceValue != null;
+
+            return dataIsObjectReference ? dataProperty.objectReferenceValue.name : index.ToString();
         }
     }
-
 
     /// <summary>
     /// This is an Edit of unity's ShadowCascadeSplitGUI class from
@@ -273,20 +300,22 @@ namespace CobayeStudio.RandomToolbox
                     break;
             }
 
-            // data correction
-            foreach (Element e in elements) if (e.Value < 0.0f) e.Value = 0.0f;
-
+            // data correction :
             float sum = 0.0f;
-            foreach (Element e in elements) sum += e.Value;
+            foreach (Element e in elements)
+            {
+                e.Value  = Mathf.Clamp01(e.Value);
+                sum += e.Value;
+            }
 
-            // if total is too low, add extra to the last
+            // if sum is too low, add extra to the last
             if(sum < 1.0f)
             {
-                elements[elements.Count - 1].Value += (1.0f - sum);
+                elements[elements.Count - 1].Value += 1.0f - sum;
             }
-            
-            // if total is too high, cut last > 0 in  half
-            if(sum > 1.0f)
+
+            // if sum is too high, decrease value of each element proportionaly to their share
+            if (sum > 1.0f)
             {
                 float extra = sum - 1.0f;
                 foreach (Element e in elements) e.Value -= extra * e.Value / sum;

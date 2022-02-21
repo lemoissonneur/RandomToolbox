@@ -4,15 +4,24 @@ using UnityEditor;
 
 namespace CobayeStudio.RandomToolbox
 {
+    /// <summary>
+    /// drawer for elements in a partition
+    /// </summary>
     [CustomPropertyDrawer(typeof(PartitionBase.ElementBase), true)]
     public class PartitionElementDrawer : PropertyDrawer
     {
+        /// <summary>
+        /// Process Rect to draw index number of the element
+        /// </summary>
         private Rect IndexLabelRect(Rect position) => new Rect(position)
         {
             height = EditorGUIUtility.singleLineHeight,
             width = EditorGUIUtility.singleLineHeight,
         };
 
+        /// <summary>
+        /// Process Rect to draw color selector
+        /// </summary>
         private Rect ColorRect(Rect position) => new Rect(position)
         {
             height = EditorGUIUtility.singleLineHeight,
@@ -20,6 +29,9 @@ namespace CobayeStudio.RandomToolbox
             width = EditorGUIUtility.singleLineHeight * 3,
         };
 
+        /// <summary>
+        /// Process Rect to draw value field
+        /// </summary>
         private Rect ValueRect(Rect position) => new Rect(position)
         {
             height = EditorGUIUtility.singleLineHeight,
@@ -27,9 +39,15 @@ namespace CobayeStudio.RandomToolbox
             width = EditorGUIUtility.singleLineHeight * 5,
         };
 
-        private Rect ObjectRect(Rect position)
+        /// <summary>
+        /// Process Rect to draw the object associated to the partition element if any
+        /// </summary>
+        private Rect DataRect(Rect position)
         {
-            if (position.height > (EditorGUIUtility.singleLineHeight + 2))
+            // if we were given more than a single line height,
+            // then we draw the element data below the (index + color + value) line
+            // else the data rect use the remaining length in the (index + color + value) line
+            if (position.height > (EditorGUIUtility.singleLineHeight + 2 * EditorGUIUtility.standardVerticalSpacing))
             {
                 return new Rect(position)
                 {
@@ -47,43 +65,60 @@ namespace CobayeStudio.RandomToolbox
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
         {
-            SerializedProperty objectProp = property.FindPropertyRelative("Object");
-            
-            float objectPropHeight = objectProp != null ?
-                EditorGUI.GetPropertyHeight(objectProp) :
-                EditorGUIUtility.singleLineHeight;
+            SerializedProperty dataProperty = property.FindPropertyRelative("Object");
 
-            float height = objectPropHeight > EditorGUIUtility.singleLineHeight ?
-                EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing + objectPropHeight :
-                EditorGUIUtility.singleLineHeight;
+            if (dataProperty != null)
+            {
+                float dataHeight = EditorGUI.GetPropertyHeight(dataProperty);
 
-            return height;
+                if (dataHeight > EditorGUIUtility.singleLineHeight)
+                {
+                    // if data height is more than one line, we need one line for (index + color + value)
+                    // and draw the data below it.
+                    return EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing + dataHeight;
+                }
+            }
+
+            // if there is no data or if we can fit in one line, we draw it on the same line as index, color and value
+            // so we only need one line
+            return EditorGUIUtility.singleLineHeight;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
             // get properties
-            SerializedProperty colorProp = property.FindPropertyRelative("Color");
-            SerializedProperty valueProp = property.FindPropertyRelative("Value");
-            SerializedProperty objectProp = property.FindPropertyRelative("Object");
+            SerializedProperty colorProperty = property.FindPropertyRelative("Color");
+            SerializedProperty valueProperty = property.FindPropertyRelative("Value");
+            SerializedProperty dataProperty = property.FindPropertyRelative("Object");
             int index = GetIndexFromPath(property.propertyPath);
 
             // draw index, color and value
             EditorGUI.LabelField(IndexLabelRect(position), index.ToString());
 
-            EditorGUI.PropertyField(ColorRect(position), colorProp, GUIContent.none);
+            EditorGUI.PropertyField(ColorRect(position), colorProperty, GUIContent.none);
 
-            EditorGUI.PropertyField(ValueRect(position), valueProp, GUIContent.none);
+            EditorGUI.PropertyField(ValueRect(position), valueProperty, GUIContent.none);
 
-            // draw generic field if needed
-            if (objectProp != null)
+            // draw data field if needed
+            if (dataProperty != null)
             {
-                EditorGUI.PropertyField(ObjectRect(position), objectProp, GUIContent.none, true);
+                EditorGUI.PropertyField(DataRect(position), dataProperty, GUIContent.none, true);
             }
         }
 
+        /// <summary>
+        /// Get the index of a serialized property in a serialized array
+        /// </summary>
+        /// <param name="path">SerializedProperty.propertyPath</param>
+        /// <returns>index or -1 if not found</returns>
         public static int GetIndexFromPath(string path)
         {
             int startIndex = path.LastIndexOf('[') + 1;
