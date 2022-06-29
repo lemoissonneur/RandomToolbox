@@ -26,13 +26,13 @@ namespace RandomToolbox
         /// <returns>new generated seed</returns>
         public static int GetSeed(this Generator value)
         {
-            switch (value)
+            return value switch
             {
-                default: return default;
-                case Generator.CurrentDateTimeBasedSeed: return CurrentDateTimeBasedSeed();
-                case Generator.SystemStartTimeSeed: return SystemStartTimeSeed();
-                // case Generator.MyCustomSeedGenerationMethod: return MyCustomSeedGenerationMethod();
-            }
+                Generator.CurrentDateTimeBasedSeed => CurrentDateTimeBasedSeed(),
+                Generator.SystemStartTimeSeed => SystemStartTimeSeed(),
+                // Generator.MyCustomSeedGenerationMethod => MyCustomSeedGenerationMethod();
+                _ => default,
+            };
         }
 
         /// <summary>

@@ -100,11 +100,9 @@ namespace RandomToolbox
         public State Save()
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
-            using (MemoryStream temp = new MemoryStream())
-            {
-                binaryFormatter.Serialize(temp, m_Random);
-                return new State() { bytes = temp.ToArray() };
-            }
+            using MemoryStream temp = new MemoryStream();
+            binaryFormatter.Serialize(temp, m_Random);
+            return new State() { bytes = temp.ToArray() };
         }
 
         /// <summary>
@@ -114,10 +112,8 @@ namespace RandomToolbox
         public void Restore(State state)
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
-            using (MemoryStream temp = new MemoryStream(state.bytes))
-            {
-                m_Random = (Random)binaryFormatter.Deserialize(temp);
-            }
+            using MemoryStream temp = new MemoryStream(state.bytes);
+            m_Random = (Random)binaryFormatter.Deserialize(temp);
         }
 
         /// <summary>
