@@ -10,7 +10,7 @@ namespace RandomToolbox
     /// A unityRandomSource instance contained in a ScriptableObject to be used
     /// in different scenes
     /// </summary>
-    [CreateAssetMenu(menuName = "Cobaye Studio/Random Toolbox/Unity Source SO")]
+    [CreateAssetMenu(menuName = "lemoissonneur/Random Toolbox/Unity Source SO")]
     public class UnityRandomSourceSO : RandomSourceBaseSO
     {
         /// <summary>
@@ -33,7 +33,7 @@ namespace RandomToolbox
         /// <summary>
         /// current save state of the Random System
         /// </summary>
-        public Random.State State = default;
+        private Random.State State = default;
 
         /// <summary>
         /// temp struct to save and restore the state of UnityEngine.Random between calls
@@ -231,6 +231,24 @@ namespace RandomToolbox
             float result = Random.Range(min, max);
             SaveState();
             return result;
+        }
+
+        /// <summary>
+        /// Get the current state to save and restore it later
+        /// </summary>
+        /// <returns></returns>
+        public Random.State Save()
+        {
+            return State;
+        }
+
+        /// <summary>
+        /// Restore the random source with the given state
+        /// </summary>
+        /// <param name="state"></param>
+        public void Restore(Random.State state)
+        {
+            State = state;
         }
     }
 }

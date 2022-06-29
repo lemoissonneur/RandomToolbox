@@ -12,7 +12,7 @@ namespace RandomToolbox
     /// A SystemRandomSource instance contained in a ScriptableObject to be used
     /// in different scenes
     /// </summary>
-    [CreateAssetMenu(menuName = "Cobaye Studio/Random Toolbox/System Source SO")]
+    [CreateAssetMenu(menuName = "lemoissonneur/Random Toolbox/System Source SO")]
     public class SystemRandomSourceSO : RandomSourceBaseSO
     {
         /// <summary>
@@ -100,7 +100,7 @@ namespace RandomToolbox
         public State Save()
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
-            using (var temp = new MemoryStream())
+            using (MemoryStream temp = new MemoryStream())
             {
                 binaryFormatter.Serialize(temp, m_Random);
                 return new State() { bytes = temp.ToArray() };
@@ -114,7 +114,7 @@ namespace RandomToolbox
         public void Restore(State state)
         {
             BinaryFormatter binaryFormatter = new BinaryFormatter();
-            using (var temp = new MemoryStream(state.bytes))
+            using (MemoryStream temp = new MemoryStream(state.bytes))
             {
                 m_Random = (Random)binaryFormatter.Deserialize(temp);
             }
