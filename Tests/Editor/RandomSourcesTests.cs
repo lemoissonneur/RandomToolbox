@@ -129,5 +129,89 @@ namespace RandomToolbox
             // assert UnityEngine.Random results are not the same (no impact from our instance restart call)
             Assert.AreNotEqual(externA, externB);
         }
+
+        /// <summary>
+        /// Check that saving and restoring a UnityRandomSource instance work
+        /// </summary>
+        [Test]
+        public void UnityRandomSourceSaveAndRestore()
+        {
+            // setup
+            int callCount = 10;
+            int seed = 123456789;
+            UnityRandomSource instance = new UnityRandomSource();
+            float[] resultsBeforeSave = new float[callCount];
+            float[] resultsAfterSave = new float[callCount];
+            float[] resultsAfterRestore = new float[callCount];
+            UnityEngine.Random.State savedState;
+
+            // run
+            instance.Start(seed);
+
+            // get callCount values 
+            for (int i = 0; i < callCount; i++)
+            {
+                resultsBeforeSave[i] = instance.value;
+            }
+
+            // save
+            savedState = instance.Save();
+
+            // get callCount values again
+            for (int i = 0; i < callCount; i++)
+                resultsAfterSave[i] = instance.value;
+
+            // restore
+            instance.Restore(savedState);
+
+            // get callCount values 
+            for (int i = 0; i < callCount; i++)
+                resultsAfterRestore[i] = instance.value;
+
+            // assert it keep running
+            Assert.AreEqual(resultsAfterSave, resultsAfterRestore);
+        }
+
+        /// <summary>
+        /// Check that saving and restoring a SystemRandomSource instance work
+        /// </summary>
+        [Test]
+        public void SystemRandomSourceSaveAndRestore()
+        {
+            // setup
+            int callCount = 10;
+            int seed = 123456789;
+            SystemRandomSource instance = new SystemRandomSource();
+            float[] resultsBeforeSave = new float[callCount];
+            float[] resultsAfterSave = new float[callCount];
+            float[] resultsAfterRestore = new float[callCount];
+            SystemRandomSource.State savedState;
+
+            // run
+            instance.Start(seed);
+
+            // get callCount values 
+            for (int i = 0; i < callCount; i++)
+            {
+                resultsBeforeSave[i] = instance.Next();
+            }
+
+            // save
+            savedState = instance.Save();
+
+            // get callCount values again
+            for (int i = 0; i < callCount; i++)
+                resultsAfterSave[i] = instance.Next();
+
+            // restore
+            instance.Restore(savedState);
+
+            // get callCount values 
+            for (int i = 0; i < callCount; i++)
+                resultsAfterRestore[i] = instance.Next();
+
+            // assert it keep running
+            Assert.AreEqual(resultsAfterSave, resultsAfterRestore);
+        }
     }
 }
