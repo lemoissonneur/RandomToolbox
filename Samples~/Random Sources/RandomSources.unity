@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 939173745}
   - component: {fileID: 939173744}
   m_Layer: 0
-  m_Name: EXAMPLE
+  m_Name: DEMO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -245,27 +245,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8265c5c5cc60ae04c9370931a8ad206d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state:
+  RandomSources: Use the 'UnityRandomSource' class to get a RandomNumberGenerator
+    similar to unity static 'Random' class. But this class wont be impacted by other
+    components calling unity's Random class.
+  myRandom:
+    m_seed: 136417308
+    SeedGenerator: 0
+  MultipleSources: "You can have multiples instance of this class if you need multiples\nRandomNumberGenerator.
+    \nother components calling unity's Random class."
+  myOtherRandom:
+    m_seed: 144322641
+    SeedGenerator: 0
+  ScriptableObjects: If you need to use your RandomNumberGenerator in multiples scenes,
+    you should probably use the ScriptableObject based class 'UnityRandomSourceSO'.
+  myRandomSO: {fileID: 11400000, guid: f80dda4e78f80914f8328a0537ea8ad0, type: 2}
+  SystemRandom: A version based on System.Random instead of UnityEngine.Random also
+    exist. It use the same principle, but dont have all the unity specific methods
+    like color generation.
+  systemSource:
+    m_seed: 0
+    SeedGenerator: 0
+  systemSourceSO: {fileID: 11400000, guid: 5eccb79bace6a4349ba9d67aba421a76, type: 2}
+  SaveRandom: Both version provide Save() and Restore() methods to use with your
+    game save system.
+  myRandomSavedState:
     s0: 0
     s1: 0
     s2: 0
     s3: 0
-  state2:
+  systemSourceSavedState:
     bytes: 
-  systemRandom:
-    m_seed: -1153387726
-    SeedGenerator: 0
-  unityRandom:
-    m_seed: 756392265
-    SeedGenerator: 1
-    State:
-      s0: 0
-      s1: 0
-      s2: 0
-      s3: 0
-  systemSO: {fileID: 11400000, guid: 5eccb79bace6a4349ba9d67aba421a76, type: 2}
-  unitySO: {fileID: 11400000, guid: f80dda4e78f80914f8328a0537ea8ad0, type: 2}
-  basicSO: {fileID: 0}
 --- !u!4 &939173745
 Transform:
   m_ObjectHideFlags: 0

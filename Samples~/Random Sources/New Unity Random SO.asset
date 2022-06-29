@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f167c96ada0a08419b4275d2d5bbc73, type: 3}
   m_Name: New Unity Random SO
   m_EditorClassIdentifier: 
+  m_initializeOnAwake: 0
+  m_reseedOnAwake: 0
   Instance:
     m_seed: 256171359
     SeedGenerator: 1
