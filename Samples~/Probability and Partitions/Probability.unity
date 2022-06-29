@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,126 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &87424395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 87424396}
+  - component: {fileID: 87424397}
+  m_Layer: 0
+  m_Name: DEMO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &87424396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87424395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &87424397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87424395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0564fda4c8b38784095f3ea3e03fc42c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partitions: 'A partition is definition of how to slice something.
+
+    You can
+    drag the cuts with your mouse to adjust each slice and change their color.'
+  myPartition:
+    Elements:
+    - Color: {r: 0.74692893, g: 0.7830189, b: 0.35826808, a: 1}
+      Value: 0.33333334
+    - Color: {r: 0.4764151, g: 0.57442623, b: 1, a: 1}
+      Value: 0.33333334
+    - Color: {r: 1, g: 0.33490568, b: 0.3828775, a: 1}
+      Value: 0.33333334
+  valuesPartitions: This is useful if you want to manage the probability of occurence
+    of some valueswhen you use random number generators. This allow for more control
+    in your game design.
+  myRandom: {fileID: 11400000, guid: d09d78e248065bf498e436d2a1fd65dc, type: 2}
+  myFakeDice:
+    Elements:
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.10000002
+      Object: 1
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.10000002
+      Object: 2
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.10000002
+      Object: 3
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.10000002
+      Object: 4
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.10000002
+      Object: 5
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.5
+      Object: 6
+  genericPartitions: You can use partitions with any types. As long as it have a
+    Propertydrawer,it will be displayed in the inspector.
+  myVectors:
+    Elements:
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
+      Object: {x: 0, y: 0, z: 0}
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
+      Object: {x: 0, y: 0, z: 0}
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
+      Object: {x: 0, y: 0, z: 0}
+  myObjects:
+    Elements:
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
+      Object: {fileID: 0}
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
+      Object: {fileID: 0}
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
+      Object: {fileID: 0}
+  myCustoms:
+    Elements:
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
+      Object:
+        someInt: 0
+        someString: 
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
+      Object:
+        someInt: 0
+        someString: 
+    - Color: {r: 0, g: 0, b: 0, a: 0}
+      Value: 0.33333334
+      Object:
+        someInt: 0
+        someString: 
 --- !u!1 &323503911
 GameObject:
   m_ObjectHideFlags: 0
