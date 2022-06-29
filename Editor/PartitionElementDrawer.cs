@@ -5,7 +5,7 @@ using UnityEditor;
 namespace RandomToolbox
 {
     /// <summary>
-    /// drawer for elements in a partition
+    /// drawer for elements in the list of a partition
     /// </summary>
     [CustomPropertyDrawer(typeof(PartitionBase.ElementBase), true)]
     public class PartitionElementDrawer : PropertyDrawer
@@ -121,6 +121,8 @@ namespace RandomToolbox
         /// <returns>index or -1 if not found</returns>
         public static int GetIndexFromPath(string path)
         {
+            // please unity devs, make a SerializedProperty.index field for array type :(
+
             int startIndex = path.LastIndexOf('[') + 1;
             int length = path.LastIndexOf(']') - startIndex;
 
