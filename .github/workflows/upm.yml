@@ -15,6 +15,7 @@ jobs:
       run: |
         git branch -d upm &> /dev/null || echo upm branch not found
         git checkout upm
+        git merge origin/main
         if [[ -d "Samples" ]]; then
           git mv Samples Samples~
           rm -f Samples.meta
