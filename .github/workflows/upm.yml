@@ -28,6 +28,13 @@ jobs:
         if [[ -d ".github" ]]; then
           rm -f -r .github
         fi
+        rm -f CHANGELOG.md.meta
+        rm -f LICENSE.md.meta
+        rm -f README.md.meta
+        rm -f Tests.meta
+        rm -f Runtime.meta
+        rm -f Editor.meta
+        rm -f package.json.meta
         if [[ `git status --porcelain` ]]; then
           git commit -am "Release~"
           git push -f -u origin upm
