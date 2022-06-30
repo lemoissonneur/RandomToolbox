@@ -14,3 +14,4 @@ Install via git url by adding this entry in your **manifest.json**
 
 `"Random Toolbox": "https://github.com/lemoissonneur/RandomToolbox.git#upm"`
 
+some test
