@@ -19,9 +19,15 @@ jobs:
           git mv Samples Samples~
           rm -f Samples.meta
         fi
-        rm -f -r .github
-        rm .gitignore
-        git config --global user.name 'github-bot'
-        git config --global user.email 'github-bot@users.noreply.github.com'
-        git commit -am "Release~"
-        git push -f -u origin upm
+        if [[ -f ".gitignore" ]]; then
+          rm .gitignore
+        fi
+        if [[ -d ".github" ]]; then
+          rm -f -r .github
+        fi
+        if [[ `git status --porcelain` ]]; then
+          git config --global user.name 'github-bot'
+          git config --global user.email 'github-bot@users.noreply.github.com'
+          git commit -am "Release~"
+          git push -f -u origin upm
+        fi
