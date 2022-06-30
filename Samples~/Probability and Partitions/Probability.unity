@@ -217,15 +217,15 @@ MonoBehaviour:
       Object: {x: 0, y: 0, z: 0}
   myObjects:
     Elements:
-    - Color: {r: 0, g: 0, b: 0, a: 0}
-      Value: 0.33333334
-      Object: {fileID: 0}
-    - Color: {r: 0, g: 0, b: 0, a: 0}
-      Value: 0.33333334
-      Object: {fileID: 0}
-    - Color: {r: 0, g: 0, b: 0, a: 0}
-      Value: 0.33333334
-      Object: {fileID: 0}
+    - Color: {r: 1, g: 0.41037738, b: 0.41037738, a: 1}
+      Value: 0.21063395
+      Object: {fileID: 1702304425068720464, guid: 761d9e9440cae4f449d44286761f9394, type: 3}
+    - Color: {r: 0.3726415, g: 0.5802043, b: 1, a: 1}
+      Value: 0.30674845
+      Object: {fileID: 1702304425068720464, guid: 6a48a85208c7a1c469bf62ea7c1b11ef, type: 3}
+    - Color: {r: 0.2688679, g: 1, b: 0.32753935, a: 1}
+      Value: 0.48261762
+      Object: {fileID: 1702304425068720464, guid: db2e74e8c4601e040b2f80f82750db13, type: 3}
   myCustoms:
     Elements:
     - Color: {r: 0, g: 0, b: 0, a: 0}
