@@ -13,3 +13,5 @@ A bunch of tools to help you keep your game randomness under control.
 Install via git url by adding this entry in your **manifest.json**
 
 `"Random Toolbox": "https://github.com/lemoissonneur/RandomToolbox.git#upm"`
+
+
