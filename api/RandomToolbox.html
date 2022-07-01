@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
     
     <meta property="docfx:rel" content="../">
     
@@ -46,7 +46,15 @@
                   <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
                 </div>
               </form>
-            </div>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../api/RandomToolbox.html" title="Scripting API">Scripting API</a>
+                      </li>
+                      <li>
+                          <a href="../changelog.md" title="Change Log">Change Log</a>
+                      </li>
+                </ul>    </div>
           </div>
         </nav>
         
@@ -69,11 +77,89 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="active">
+                      <span class="expand-stub"></span>
+                      <a href="RandomToolbox.html" title="RandomToolbox" class="active">RandomToolbox</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="RandomToolbox.Partition.html" title="Partition" class="">Partition</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.Partition.Element.html" title="Partition.Element" class="">Partition.Element</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.Partition-1.html" title="Partition&lt;T&gt;" class="">Partition&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.Partition-1.Element.html" title="Partition&lt;T&gt;.Element" class="">Partition&lt;T&gt;.Element</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.PartitionBase.html" title="PartitionBase" class="">PartitionBase</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.PartitionBase.CorrectionRule.html" title="PartitionBase.CorrectionRule" class="">PartitionBase.CorrectionRule</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.PartitionBase.ElementBase.html" title="PartitionBase.ElementBase" class="">PartitionBase.ElementBase</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.PartitionDrawer.html" title="PartitionDrawer" class="">PartitionDrawer</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.PartitionElementDrawer.html" title="PartitionElementDrawer" class="">PartitionElementDrawer</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.PartitionTester.html" title="PartitionTester" class="">PartitionTester</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.RandomSourceBase.html" title="RandomSourceBase" class="">RandomSourceBase</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.RandomSourceBaseSO.html" title="RandomSourceBaseSO" class="">RandomSourceBaseSO</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.RandomSourcesTests.html" title="RandomSourcesTests" class="">RandomSourcesTests</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.SeedGenerators.html" title="SeedGenerators" class="">SeedGenerators</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.SeedGenerators.Generator.html" title="SeedGenerators.Generator" class="">SeedGenerators.Generator</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.SystemRandomSource.html" title="SystemRandomSource" class="">SystemRandomSource</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.SystemRandomSource.State.html" title="SystemRandomSource.State" class="">SystemRandomSource.State</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.SystemRandomSourceSO.html" title="SystemRandomSourceSO" class="">SystemRandomSourceSO</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.UnityRandomSource.html" title="UnityRandomSource" class="">UnityRandomSource</a>
+                          </li>
+                          <li class="">
+                            <a href="RandomToolbox.UnityRandomSourceSO.html" title="UnityRandomSourceSO" class="">UnityRandomSourceSO</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="article row grid-right">
