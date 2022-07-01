@@ -23,6 +23,7 @@ jobs:
           cp README.md Documentation~/index.md
           cp CHANGELOG.md Documentation~/changelog.md
           docfx Documentation~/docfx.json
+          git add -A
           git config --global user.name 'github-bot'
           git config --global user.email 'github-bot@users.noreply.github.com'
           if (git status --porcelain)
@@ -37,10 +38,6 @@ jobs:
         with:
           name: _site
           path: Documentation~/offline # Must equals the 'build.dest' value on your docfx.json
-
-      - name: push on main
-        run: |
-
 
 
   # publish documentation on gh-page branch
