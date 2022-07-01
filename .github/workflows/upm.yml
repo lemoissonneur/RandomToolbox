@@ -4,29 +4,94 @@ on:
     branches:
     - main
 jobs:
-  split-upm:
-    name: split upm branch (force)
+
+  # Build the documentation
+  build:
+    runs-on: windows-latest # Required by DocFX
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        # with:
+        #   submodules: true
+
+      - name: Install DocFX
+        run: choco install -y docfx
+
+      # Copy over a few markdown files before generating the documentation
+      - name: Build
+        run: |
+          cp README.md Documentation~/index.md
+          cp CHANGELOG.md Documentation~/manual/changelog.md
+          docfx Documentation~/docfx.json
+
+      # Upload the generated documentation
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: _site
+          path: _site # Must equals the 'build.dest' value on your docfx.json
+
+      - name: push on main
+        run: |
+          git config --global user.name 'github-bot'
+          git config --global user.email 'github-bot@users.noreply.github.com'
+          if [[ `git status --porcelain` ]]; then
+            git commit -am "Update documentation"
+            git push -f -u origin main
+          fi
+
+
+  # publish documentation on gh-page branch
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest # Required by 'JamesIves/github-pages-deploy-action'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        # with:
+        #   submodules: true
+
+      # Download the generated documentation
+      - name: Download site artifact
+        uses: actions/download-artifact@v1
+        with:
+          name: _site
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.AccessToken }} # You need some setup, see https://github.com/JamesIves/github-pages-deploy-action
+          BRANCH: gh-pages
+          FOLDER: _site
+
+
+  # publish release on upm branch
+  release:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - name: split upm branch
+        ref: 'upm'
+
+    # release
+    - name: release on upm branch
       run: |
-        git checkout upm
         git config --global user.name 'github-bot'
         git config --global user.email 'github-bot@users.noreply.github.com'
+
         git rebase -s ours origin/main
+
+      # make sure Sample file is ~
         if [[ -d "Samples" ]]; then
           git mv Samples Samples~
           rm -f Samples.meta
         fi
-        if [[ -f ".gitignore" ]]; then
-          rm .gitignore
-        fi
-        if [[ -d ".github" ]]; then
-          rm -f -r .github
-        fi
+
+      # cleanup useless files if any
+        rm .gitignore
+        rm -f -r .github
         rm -f CHANGELOG.md.meta
         rm -f LICENSE.md.meta
         rm -f README.md.meta
@@ -34,8 +99,9 @@ jobs:
         rm -f Runtime.meta
         rm -f Editor.meta
         rm -f package.json.meta
+
+      # commit and push any changes
         if [[ `git status --porcelain` ]]; then
-          git commit -am "Release~"
+          git commit -am "Release"
           git push -f -u origin upm
         fi
-
