@@ -18,8 +18,8 @@
   },
   "license": "See LICENSE.md file",
   "licensesUrl": "",
-  "changelogUrl": "",
-  "documentationUrl": "",
+  "changelogUrl": "https://github.com/lemoissonneur/RandomToolbox/blob/main/CHANGELOG.md",
+  "documentationUrl": "https://lemoissonneur.github.io/RandomToolbox/",
   "samples" : [
     {
       "displayName": "Manage Random Sources",
