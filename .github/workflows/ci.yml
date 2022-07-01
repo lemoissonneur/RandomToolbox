@@ -17,20 +17,24 @@ jobs:
       - name: Install DocFX
         run: choco install -y docfx
 
-      # Copy over a few markdown files before generating the documentation
-      - name: Build
+      # update upm branch
+      - name: update upm
+        run: |
+          git config --global user.name 'github-bot'
+          git config --global user.email 'github-bot@users.noreply.github.com'
+          git checkout upm || git checkout -b upm
+          git rebase -s ours origin/main
+
+      # prepare build
+      - name: pre build
         run: |
           cp README.md Documentation~/index.md
           cp CHANGELOG.md Documentation~/changelog.md
+
+      # BUILD
+      - name: Build
+        run: |
           docfx Documentation~/docfx.json
-          git add -A
-          git config --global user.name 'github-bot'
-          git config --global user.email 'github-bot@users.noreply.github.com'
-          if (git status --porcelain)
-          {
-            git commit -am "Update documentation"
-            git push -f -u origin main
-          }
 
       # Upload the generated documentation
       - name: Upload site artifact
@@ -38,6 +42,38 @@ jobs:
         with:
           name: _site
           path: Documentation~/offline # Must equals the 'build.dest' value on your docfx.json
+
+      # remove useless files
+      - name: post build clean
+        run: |
+          del Documentation~/api -r
+          del Documentation~/obj -r
+          del Documentation~/index.md
+          del Documentation~/changelog.md
+          del .gitignore
+          del .github -r
+          del CHANGELOG.md.meta
+          del LICENSE.md.meta
+          del README.md.meta
+          del Tests.meta
+          del Runtime.meta
+          del Editor.meta
+          del package.json.meta
+          if(Test-Path "Samples") {
+            Rename-Item -Path "Samples" -NewName "Samples~"
+            del Samples.meta
+          }
+
+      # push release on upm
+      - name: upm release
+        run: |
+          git config --global user.name 'github-bot'
+          git config --global user.email 'github-bot@users.noreply.github.com'
+          if (git status --porcelain)
+          {
+            git commit -am "Release"
+            git push -f -u origin upm
+          }
 
 
   # publish documentation on gh-page branch
@@ -63,38 +99,3 @@ jobs:
           BRANCH: gh-pages
           FOLDER: _site
 
-
-  # publish release on upm branch
-  release:
-    needs: deploy
-    runs-on: ubuntu-latest
-    steps:
-    - name: checkout
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-
-    # release : make sure Sample file is ~, cleanup useless files if any, commit and push any changes
-    - name: release on upm branch
-      run: |
-        git config --global user.name 'github-bot'
-        git config --global user.email 'github-bot@users.noreply.github.com'
-        git checkout upm
-        git rebase -s ours origin/main
-        if [[ -d "Samples" ]]; then 
-          git mv Samples Samples~
-          rm -f Samples.meta
-        fi
-        rm .gitignore
-        rm -f -r .github
-        rm -f CHANGELOG.md.meta
-        rm -f LICENSE.md.meta
-        rm -f README.md.meta
-        rm -f Tests.meta
-        rm -f Runtime.meta
-        rm -f Editor.meta
-        rm -f package.json.meta
-        if [[ `git status --porcelain` ]]; then
-          git commit -am "Release"
-          git push -f -u origin upm
-        fi
