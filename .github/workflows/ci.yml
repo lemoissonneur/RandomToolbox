@@ -52,13 +52,6 @@ jobs:
           del Documentation~/changelog.md
           del .gitignore
           del .github -r
-          del CHANGELOG.md.meta
-          del LICENSE.md.meta
-          del README.md.meta
-          del Tests.meta
-          del Runtime.meta
-          del Editor.meta
-          del package.json.meta
           if(Test-Path "Samples") {
             Rename-Item -Path "Samples" -NewName "Samples~"
             del Samples.meta
