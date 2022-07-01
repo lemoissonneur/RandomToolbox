@@ -49,7 +49,7 @@ jobs:
           del Documentation~/api -r
           del Documentation~/obj -r
           del Documentation~/index.md
-          del Documentation~/changelog.md
+          move Documentation~/changelog.md Documentation~/offline/changelog.md
           del .gitignore
           del .github -r
           if(Test-Path "Samples") {
