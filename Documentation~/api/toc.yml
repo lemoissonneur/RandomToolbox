@@ -1,0 +1,46 @@
+### YamlMime:TableOfContent
+- uid: RandomToolbox
+  name: RandomToolbox
+  items:
+  - uid: RandomToolbox.Partition
+    name: Partition
+  - uid: RandomToolbox.Partition.Element
+    name: Partition.Element
+  - uid: RandomToolbox.Partition`1
+    name: Partition<T>
+    name.vb: Partition(Of T)
+  - uid: RandomToolbox.Partition`1.Element
+    name: Partition<T>.Element
+    name.vb: Partition(Of T).Element
+  - uid: RandomToolbox.PartitionBase
+    name: PartitionBase
+  - uid: RandomToolbox.PartitionBase.CorrectionRule
+    name: PartitionBase.CorrectionRule
+  - uid: RandomToolbox.PartitionBase.ElementBase
+    name: PartitionBase.ElementBase
+  - uid: RandomToolbox.PartitionDrawer
+    name: PartitionDrawer
+  - uid: RandomToolbox.PartitionElementDrawer
+    name: PartitionElementDrawer
+  - uid: RandomToolbox.PartitionTester
+    name: PartitionTester
+  - uid: RandomToolbox.RandomSourceBase
+    name: RandomSourceBase
+  - uid: RandomToolbox.RandomSourceBaseSO
+    name: RandomSourceBaseSO
+  - uid: RandomToolbox.RandomSourcesTests
+    name: RandomSourcesTests
+  - uid: RandomToolbox.SeedGenerators
+    name: SeedGenerators
+  - uid: RandomToolbox.SeedGenerators.Generator
+    name: SeedGenerators.Generator
+  - uid: RandomToolbox.SystemRandomSource
+    name: SystemRandomSource
+  - uid: RandomToolbox.SystemRandomSource.State
+    name: SystemRandomSource.State
+  - uid: RandomToolbox.SystemRandomSourceSO
+    name: SystemRandomSourceSO
+  - uid: RandomToolbox.UnityRandomSource
+    name: UnityRandomSource
+  - uid: RandomToolbox.UnityRandomSourceSO
+    name: UnityRandomSourceSO

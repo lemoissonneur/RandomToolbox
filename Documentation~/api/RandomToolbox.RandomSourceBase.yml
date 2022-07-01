@@ -1,0 +1,356 @@
+### YamlMime:ManagedReference
+items:
+- uid: RandomToolbox.RandomSourceBase
+  commentId: T:RandomToolbox.RandomSourceBase
+  id: RandomSourceBase
+  parent: RandomToolbox
+  children:
+  - RandomToolbox.RandomSourceBase.m_seed
+  - RandomToolbox.RandomSourceBase.Reseed
+  - RandomToolbox.RandomSourceBase.Seed
+  - RandomToolbox.RandomSourceBase.SeedGenerator
+  - RandomToolbox.RandomSourceBase.Start
+  - RandomToolbox.RandomSourceBase.Start(RandomToolbox.SeedGenerators.Generator)
+  - RandomToolbox.RandomSourceBase.Start(System.Boolean)
+  - RandomToolbox.RandomSourceBase.Start(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: RandomSourceBase
+  nameWithType: RandomSourceBase
+  fullName: RandomToolbox.RandomSourceBase
+  type: Class
+  source:
+    id: RandomSourceBase
+    path: ''
+    startLine: 1031
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nBase class for Seed System\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public abstract class RandomSourceBase
+    content.vb: >-
+      <Serializable>
+
+      Public MustInherit Class RandomSourceBase
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - RandomToolbox.SystemRandomSource
+  - RandomToolbox.UnityRandomSource
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: RandomToolbox.RandomSourceBase.m_seed
+  commentId: F:RandomToolbox.RandomSourceBase.m_seed
+  id: m_seed
+  parent: RandomToolbox.RandomSourceBase
+  langs:
+  - csharp
+  - vb
+  name: m_seed
+  nameWithType: RandomSourceBase.m_seed
+  fullName: RandomToolbox.RandomSourceBase.m_seed
+  type: Field
+  source:
+    id: m_seed
+    path: ''
+    startLine: 1037
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nCurrent seed\n"
+  example: []
+  syntax:
+    content: protected int m_seed
+    return:
+      type: System.Int32
+    content.vb: Protected m_seed As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: RandomToolbox.RandomSourceBase.SeedGenerator
+  commentId: F:RandomToolbox.RandomSourceBase.SeedGenerator
+  id: SeedGenerator
+  parent: RandomToolbox.RandomSourceBase
+  langs:
+  - csharp
+  - vb
+  name: SeedGenerator
+  nameWithType: RandomSourceBase.SeedGenerator
+  fullName: RandomToolbox.RandomSourceBase.SeedGenerator
+  type: Field
+  source:
+    id: SeedGenerator
+    path: ''
+    startLine: 1042
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nCurrent select seed generator to use for Reseed()\n"
+  example: []
+  syntax:
+    content: public SeedGenerators.Generator SeedGenerator
+    return:
+      type: RandomToolbox.SeedGenerators.Generator
+    content.vb: Public SeedGenerator As SeedGenerators.Generator
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.RandomSourceBase.Seed
+  commentId: P:RandomToolbox.RandomSourceBase.Seed
+  id: Seed
+  parent: RandomToolbox.RandomSourceBase
+  langs:
+  - csharp
+  - vb
+  name: Seed
+  nameWithType: RandomSourceBase.Seed
+  fullName: RandomToolbox.RandomSourceBase.Seed
+  type: Property
+  source:
+    id: Seed
+    path: ''
+    startLine: 1047
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nThe current seed used\n"
+  example: []
+  syntax:
+    content: public int Seed { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Seed As Integer
+  overload: RandomToolbox.RandomSourceBase.Seed*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: RandomToolbox.RandomSourceBase.Start
+  commentId: M:RandomToolbox.RandomSourceBase.Start
+  id: Start
+  parent: RandomToolbox.RandomSourceBase
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: RandomSourceBase.Start()
+  fullName: RandomToolbox.RandomSourceBase.Start()
+  type: Method
+  source:
+    id: Start
+    path: ''
+    startLine: 1052
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nInitialize the Seed system with the current seed\n"
+  example: []
+  syntax:
+    content: public abstract void Start()
+    content.vb: Public MustOverride Sub Start
+  overload: RandomToolbox.RandomSourceBase.Start*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: RandomToolbox.RandomSourceBase.Start(System.Int32)
+  commentId: M:RandomToolbox.RandomSourceBase.Start(System.Int32)
+  id: Start(System.Int32)
+  parent: RandomToolbox.RandomSourceBase
+  langs:
+  - csharp
+  - vb
+  name: Start(Int32)
+  nameWithType: RandomSourceBase.Start(Int32)
+  fullName: RandomToolbox.RandomSourceBase.Start(System.Int32)
+  type: Method
+  source:
+    id: Start
+    path: ''
+    startLine: 1058
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nInitialize the Seed system with the given new seed\n"
+  example: []
+  syntax:
+    content: public void Start(int newSeed)
+    parameters:
+    - id: newSeed
+      type: System.Int32
+      description: seed used to initialize the system
+    content.vb: Public Sub Start(newSeed As Integer)
+  overload: RandomToolbox.RandomSourceBase.Start*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.RandomSourceBase.Start(System.Boolean)
+  commentId: M:RandomToolbox.RandomSourceBase.Start(System.Boolean)
+  id: Start(System.Boolean)
+  parent: RandomToolbox.RandomSourceBase
+  langs:
+  - csharp
+  - vb
+  name: Start(Boolean)
+  nameWithType: RandomSourceBase.Start(Boolean)
+  fullName: RandomToolbox.RandomSourceBase.Start(System.Boolean)
+  type: Method
+  source:
+    id: Start
+    path: ''
+    startLine: 1068
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nIf reseed is true, generate a new seed using the current SeedGenerator value and initialize random source\n"
+  example: []
+  syntax:
+    content: public void Start(bool reseed)
+    parameters:
+    - id: reseed
+      type: System.Boolean
+      description: ''
+    content.vb: Public Sub Start(reseed As Boolean)
+  overload: RandomToolbox.RandomSourceBase.Start*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.RandomSourceBase.Start(RandomToolbox.SeedGenerators.Generator)
+  commentId: M:RandomToolbox.RandomSourceBase.Start(RandomToolbox.SeedGenerators.Generator)
+  id: Start(RandomToolbox.SeedGenerators.Generator)
+  parent: RandomToolbox.RandomSourceBase
+  langs:
+  - csharp
+  - vb
+  name: Start(SeedGenerators.Generator)
+  nameWithType: RandomSourceBase.Start(SeedGenerators.Generator)
+  fullName: RandomToolbox.RandomSourceBase.Start(RandomToolbox.SeedGenerators.Generator)
+  type: Method
+  source:
+    id: Start
+    path: ''
+    startLine: 1078
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nInitialize the Seed system with a new seed from the given seed generator\n"
+  example: []
+  syntax:
+    content: public void Start(SeedGenerators.Generator seedGenerator)
+    parameters:
+    - id: seedGenerator
+      type: RandomToolbox.SeedGenerators.Generator
+      description: Generator to use to get a new seed
+    content.vb: Public Sub Start(seedGenerator As SeedGenerators.Generator)
+  overload: RandomToolbox.RandomSourceBase.Start*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.RandomSourceBase.Reseed
+  commentId: M:RandomToolbox.RandomSourceBase.Reseed
+  id: Reseed
+  parent: RandomToolbox.RandomSourceBase
+  langs:
+  - csharp
+  - vb
+  name: Reseed()
+  nameWithType: RandomSourceBase.Reseed()
+  fullName: RandomToolbox.RandomSourceBase.Reseed()
+  type: Method
+  source:
+    id: Reseed
+    path: ''
+    startLine: 1089
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nGenerate a new seed using the current SeedGenerator value and initialize random source\nthis is a shorthand for &apos;Start(SeedGenerator.GetSeed());&apos;\n"
+  example: []
+  syntax:
+    content: public void Reseed()
+    content.vb: Public Sub Reseed
+  overload: RandomToolbox.RandomSourceBase.Reseed*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: RandomToolbox
+  commentId: N:RandomToolbox
+  name: RandomToolbox
+  nameWithType: RandomToolbox
+  fullName: RandomToolbox
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: RandomToolbox.SeedGenerators.Generator
+  commentId: T:RandomToolbox.SeedGenerators.Generator
+  parent: RandomToolbox
+  name: SeedGenerators.Generator
+  nameWithType: SeedGenerators.Generator
+  fullName: RandomToolbox.SeedGenerators.Generator
+- uid: RandomToolbox.RandomSourceBase.Seed*
+  commentId: Overload:RandomToolbox.RandomSourceBase.Seed
+  name: Seed
+  nameWithType: RandomSourceBase.Seed
+  fullName: RandomToolbox.RandomSourceBase.Seed
+- uid: RandomToolbox.RandomSourceBase.Start*
+  commentId: Overload:RandomToolbox.RandomSourceBase.Start
+  name: Start
+  nameWithType: RandomSourceBase.Start
+  fullName: RandomToolbox.RandomSourceBase.Start
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: RandomToolbox.RandomSourceBase.Reseed*
+  commentId: Overload:RandomToolbox.RandomSourceBase.Reseed
+  name: Reseed
+  nameWithType: RandomSourceBase.Reseed
+  fullName: RandomToolbox.RandomSourceBase.Reseed

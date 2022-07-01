@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: RandomToolbox.SeedGenerators
+  commentId: T:RandomToolbox.SeedGenerators
+  id: SeedGenerators
+  parent: RandomToolbox
+  children:
+  - RandomToolbox.SeedGenerators.CurrentDateTimeBasedSeed
+  - RandomToolbox.SeedGenerators.GetSeed(RandomToolbox.SeedGenerators.Generator)
+  - RandomToolbox.SeedGenerators.SystemStartTimeSeed
+  langs:
+  - csharp
+  - vb
+  name: SeedGenerators
+  nameWithType: SeedGenerators
+  fullName: RandomToolbox.SeedGenerators
+  type: Class
+  source:
+    id: SeedGenerators
+    path: ''
+    startLine: 1106
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nClass for seed generation\n"
+  example: []
+  syntax:
+    content: public static class SeedGenerators
+    content.vb: Public Module SeedGenerators
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: RandomToolbox.SeedGenerators.GetSeed(RandomToolbox.SeedGenerators.Generator)
+  commentId: M:RandomToolbox.SeedGenerators.GetSeed(RandomToolbox.SeedGenerators.Generator)
+  id: GetSeed(RandomToolbox.SeedGenerators.Generator)
+  isExtensionMethod: true
+  parent: RandomToolbox.SeedGenerators
+  langs:
+  - csharp
+  - vb
+  name: GetSeed(SeedGenerators.Generator)
+  nameWithType: SeedGenerators.GetSeed(SeedGenerators.Generator)
+  fullName: RandomToolbox.SeedGenerators.GetSeed(RandomToolbox.SeedGenerators.Generator)
+  type: Method
+  source:
+    id: GetSeed
+    path: ''
+    startLine: 1123
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nGenerate seed from Generator enum value\n"
+  example: []
+  syntax:
+    content: public static int GetSeed(this SeedGenerators.Generator value)
+    parameters:
+    - id: value
+      type: RandomToolbox.SeedGenerators.Generator
+      description: SeedGenerators.Generator enum value
+    return:
+      type: System.Int32
+      description: new generated seed
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetSeed(value As SeedGenerators.Generator) As Integer
+  overload: RandomToolbox.SeedGenerators.GetSeed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: RandomToolbox.SeedGenerators.CurrentDateTimeBasedSeed
+  commentId: M:RandomToolbox.SeedGenerators.CurrentDateTimeBasedSeed
+  id: CurrentDateTimeBasedSeed
+  parent: RandomToolbox.SeedGenerators
+  langs:
+  - csharp
+  - vb
+  name: CurrentDateTimeBasedSeed()
+  nameWithType: SeedGenerators.CurrentDateTimeBasedSeed()
+  fullName: RandomToolbox.SeedGenerators.CurrentDateTimeBasedSeed()
+  type: Method
+  source:
+    id: CurrentDateTimeBasedSeed
+    path: ''
+    startLine: 1138
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nGet a new seed based on current date and time\n"
+  example: []
+  syntax:
+    content: public static int CurrentDateTimeBasedSeed()
+    return:
+      type: System.Int32
+      description: Return the result of System.DateTime.Now.Ticks
+    content.vb: Public Shared Function CurrentDateTimeBasedSeed As Integer
+  overload: RandomToolbox.SeedGenerators.CurrentDateTimeBasedSeed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: RandomToolbox.SeedGenerators.SystemStartTimeSeed
+  commentId: M:RandomToolbox.SeedGenerators.SystemStartTimeSeed
+  id: SystemStartTimeSeed
+  parent: RandomToolbox.SeedGenerators
+  langs:
+  - csharp
+  - vb
+  name: SystemStartTimeSeed()
+  nameWithType: SeedGenerators.SystemStartTimeSeed()
+  fullName: RandomToolbox.SeedGenerators.SystemStartTimeSeed()
+  type: Method
+  source:
+    id: SystemStartTimeSeed
+    path: ''
+    startLine: 1144
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nGet a new seed based on time elapsed since the machine we are running on started\n"
+  example: []
+  syntax:
+    content: public static int SystemStartTimeSeed()
+    return:
+      type: System.Int32
+      description: Return the result of System.Environment.TickCount
+    content.vb: Public Shared Function SystemStartTimeSeed As Integer
+  overload: RandomToolbox.SeedGenerators.SystemStartTimeSeed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: RandomToolbox
+  commentId: N:RandomToolbox
+  name: RandomToolbox
+  nameWithType: RandomToolbox
+  fullName: RandomToolbox
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RandomToolbox.SeedGenerators.GetSeed*
+  commentId: Overload:RandomToolbox.SeedGenerators.GetSeed
+  name: GetSeed
+  nameWithType: SeedGenerators.GetSeed
+  fullName: RandomToolbox.SeedGenerators.GetSeed
+- uid: RandomToolbox.SeedGenerators.Generator
+  commentId: T:RandomToolbox.SeedGenerators.Generator
+  parent: RandomToolbox
+  name: SeedGenerators.Generator
+  nameWithType: SeedGenerators.Generator
+  fullName: RandomToolbox.SeedGenerators.Generator
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: RandomToolbox.SeedGenerators.CurrentDateTimeBasedSeed*
+  commentId: Overload:RandomToolbox.SeedGenerators.CurrentDateTimeBasedSeed
+  name: CurrentDateTimeBasedSeed
+  nameWithType: SeedGenerators.CurrentDateTimeBasedSeed
+  fullName: RandomToolbox.SeedGenerators.CurrentDateTimeBasedSeed
+- uid: RandomToolbox.SeedGenerators.SystemStartTimeSeed*
+  commentId: Overload:RandomToolbox.SeedGenerators.SystemStartTimeSeed
+  name: SystemStartTimeSeed
+  nameWithType: SeedGenerators.SystemStartTimeSeed
+  fullName: RandomToolbox.SeedGenerators.SystemStartTimeSeed

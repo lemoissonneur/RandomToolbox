@@ -1,0 +1,682 @@
+### YamlMime:ManagedReference
+items:
+- uid: RandomToolbox.SystemRandomSource
+  commentId: T:RandomToolbox.SystemRandomSource
+  id: SystemRandomSource
+  parent: RandomToolbox
+  children:
+  - RandomToolbox.SystemRandomSource.#ctor
+  - RandomToolbox.SystemRandomSource.#ctor(System.Int32)
+  - RandomToolbox.SystemRandomSource.Next
+  - RandomToolbox.SystemRandomSource.Next(System.Int32)
+  - RandomToolbox.SystemRandomSource.Next(System.Int32,System.Int32)
+  - RandomToolbox.SystemRandomSource.NextBytes(System.Byte[])
+  - RandomToolbox.SystemRandomSource.NextDouble
+  - RandomToolbox.SystemRandomSource.Restore(RandomToolbox.SystemRandomSource.State)
+  - RandomToolbox.SystemRandomSource.Save
+  - RandomToolbox.SystemRandomSource.Start
+  langs:
+  - csharp
+  - vb
+  name: SystemRandomSource
+  nameWithType: SystemRandomSource
+  fullName: RandomToolbox.SystemRandomSource
+  type: Class
+  source:
+    id: SystemRandomSource
+    path: ''
+    startLine: 1185
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nSafe Random source based on System.Random\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class SystemRandomSource : RandomSourceBase
+    content.vb: >-
+      <Serializable>
+
+      Public Class SystemRandomSource
+          Inherits RandomSourceBase
+  inheritance:
+  - System.Object
+  - RandomToolbox.RandomSourceBase
+  inheritedMembers:
+  - RandomToolbox.RandomSourceBase.m_seed
+  - RandomToolbox.RandomSourceBase.SeedGenerator
+  - RandomToolbox.RandomSourceBase.Seed
+  - RandomToolbox.RandomSourceBase.Start(System.Int32)
+  - RandomToolbox.RandomSourceBase.Start(System.Boolean)
+  - RandomToolbox.RandomSourceBase.Start(RandomToolbox.SeedGenerators.Generator)
+  - RandomToolbox.RandomSourceBase.Reseed
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: RandomToolbox.SystemRandomSource.#ctor
+  commentId: M:RandomToolbox.SystemRandomSource.#ctor
+  id: '#ctor'
+  parent: RandomToolbox.SystemRandomSource
+  langs:
+  - csharp
+  - vb
+  name: SystemRandomSource()
+  nameWithType: SystemRandomSource.SystemRandomSource()
+  fullName: RandomToolbox.SystemRandomSource.SystemRandomSource()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1196
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nInstantiate a new SystemRandomSource but does not initialize it\n"
+  example: []
+  syntax:
+    content: public SystemRandomSource()
+    content.vb: Public Sub New
+  overload: RandomToolbox.SystemRandomSource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.SystemRandomSource.#ctor(System.Int32)
+  commentId: M:RandomToolbox.SystemRandomSource.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: RandomToolbox.SystemRandomSource
+  langs:
+  - csharp
+  - vb
+  name: SystemRandomSource(Int32)
+  nameWithType: SystemRandomSource.SystemRandomSource(Int32)
+  fullName: RandomToolbox.SystemRandomSource.SystemRandomSource(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1202
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nInstantiate a new UnityRandomSource and Initialize with given seed.\n"
+  example: []
+  syntax:
+    content: public SystemRandomSource(int seed)
+    parameters:
+    - id: seed
+      type: System.Int32
+      description: Seed to initialize the random generator
+    content.vb: Public Sub New(seed As Integer)
+  overload: RandomToolbox.SystemRandomSource.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.SystemRandomSource.Start
+  commentId: M:RandomToolbox.SystemRandomSource.Start
+  id: Start
+  parent: RandomToolbox.SystemRandomSource
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: SystemRandomSource.Start()
+  fullName: RandomToolbox.SystemRandomSource.Start()
+  type: Method
+  source:
+    id: Start
+    path: ''
+    startLine: 1211
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nInitialize the Seed system with the current seed\n"
+  example: []
+  syntax:
+    content: public override void Start()
+    content.vb: Public Overrides Sub Start
+  overridden: RandomToolbox.RandomSourceBase.Start
+  overload: RandomToolbox.SystemRandomSource.Start*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: RandomToolbox.SystemRandomSource.Next
+  commentId: M:RandomToolbox.SystemRandomSource.Next
+  id: Next
+  parent: RandomToolbox.SystemRandomSource
+  langs:
+  - csharp
+  - vb
+  name: Next()
+  nameWithType: SystemRandomSource.Next()
+  fullName: RandomToolbox.SystemRandomSource.Next()
+  type: Method
+  source:
+    id: Next
+    path: ''
+    startLine: 1220
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nsame as System.Random.Next()\n"
+  example: []
+  syntax:
+    content: public int Next()
+    return:
+      type: System.Int32
+      description: int
+    content.vb: Public Function Next As Integer
+  overload: RandomToolbox.SystemRandomSource.Next*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.SystemRandomSource.Next(System.Int32)
+  commentId: M:RandomToolbox.SystemRandomSource.Next(System.Int32)
+  id: Next(System.Int32)
+  parent: RandomToolbox.SystemRandomSource
+  langs:
+  - csharp
+  - vb
+  name: Next(Int32)
+  nameWithType: SystemRandomSource.Next(Int32)
+  fullName: RandomToolbox.SystemRandomSource.Next(System.Int32)
+  type: Method
+  source:
+    id: Next
+    path: ''
+    startLine: 1227
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nsame as System.Random.Next(int maxValue)\n"
+  example: []
+  syntax:
+    content: public int Next(int maxValue)
+    parameters:
+    - id: maxValue
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function Next(maxValue As Integer) As Integer
+  overload: RandomToolbox.SystemRandomSource.Next*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.SystemRandomSource.Next(System.Int32,System.Int32)
+  commentId: M:RandomToolbox.SystemRandomSource.Next(System.Int32,System.Int32)
+  id: Next(System.Int32,System.Int32)
+  parent: RandomToolbox.SystemRandomSource
+  langs:
+  - csharp
+  - vb
+  name: Next(Int32, Int32)
+  nameWithType: SystemRandomSource.Next(Int32, Int32)
+  fullName: RandomToolbox.SystemRandomSource.Next(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: Next
+    path: ''
+    startLine: 1235
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nsame as System.Random.Next(int minValue, int maxValue)\n"
+  example: []
+  syntax:
+    content: public int Next(int minValue, int maxValue)
+    parameters:
+    - id: minValue
+      type: System.Int32
+      description: ''
+    - id: maxValue
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function Next(minValue As Integer, maxValue As Integer) As Integer
+  overload: RandomToolbox.SystemRandomSource.Next*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.SystemRandomSource.NextBytes(System.Byte[])
+  commentId: M:RandomToolbox.SystemRandomSource.NextBytes(System.Byte[])
+  id: NextBytes(System.Byte[])
+  parent: RandomToolbox.SystemRandomSource
+  langs:
+  - csharp
+  - vb
+  name: NextBytes(Byte[])
+  nameWithType: SystemRandomSource.NextBytes(Byte[])
+  fullName: RandomToolbox.SystemRandomSource.NextBytes(System.Byte[])
+  type: Method
+  source:
+    id: NextBytes
+    path: ''
+    startLine: 1241
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nsame as System.Random.NextBytes(byte[] buffer)\n"
+  example: []
+  syntax:
+    content: public void NextBytes(byte[] buffer)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: ''
+    content.vb: Public Sub NextBytes(buffer As Byte())
+  overload: RandomToolbox.SystemRandomSource.NextBytes*
+  nameWithType.vb: SystemRandomSource.NextBytes(Byte())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RandomToolbox.SystemRandomSource.NextBytes(System.Byte())
+  name.vb: NextBytes(Byte())
+- uid: RandomToolbox.SystemRandomSource.NextDouble
+  commentId: M:RandomToolbox.SystemRandomSource.NextDouble
+  id: NextDouble
+  parent: RandomToolbox.SystemRandomSource
+  langs:
+  - csharp
+  - vb
+  name: NextDouble()
+  nameWithType: SystemRandomSource.NextDouble()
+  fullName: RandomToolbox.SystemRandomSource.NextDouble()
+  type: Method
+  source:
+    id: NextDouble
+    path: ''
+    startLine: 1247
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nsame as System.Random.NextDouble()\n"
+  example: []
+  syntax:
+    content: public double NextDouble()
+    return:
+      type: System.Double
+      description: ''
+    content.vb: Public Function NextDouble As Double
+  overload: RandomToolbox.SystemRandomSource.NextDouble*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.SystemRandomSource.Save
+  commentId: M:RandomToolbox.SystemRandomSource.Save
+  id: Save
+  parent: RandomToolbox.SystemRandomSource
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: SystemRandomSource.Save()
+  fullName: RandomToolbox.SystemRandomSource.Save()
+  type: Method
+  source:
+    id: Save
+    path: ''
+    startLine: 1253
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nGet the current state to save and restore it later\n"
+  example: []
+  syntax:
+    content: public SystemRandomSource.State Save()
+    return:
+      type: RandomToolbox.SystemRandomSource.State
+      description: ''
+    content.vb: Public Function Save As SystemRandomSource.State
+  overload: RandomToolbox.SystemRandomSource.Save*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.SystemRandomSource.Restore(RandomToolbox.SystemRandomSource.State)
+  commentId: M:RandomToolbox.SystemRandomSource.Restore(RandomToolbox.SystemRandomSource.State)
+  id: Restore(RandomToolbox.SystemRandomSource.State)
+  parent: RandomToolbox.SystemRandomSource
+  langs:
+  - csharp
+  - vb
+  name: Restore(SystemRandomSource.State)
+  nameWithType: SystemRandomSource.Restore(SystemRandomSource.State)
+  fullName: RandomToolbox.SystemRandomSource.Restore(RandomToolbox.SystemRandomSource.State)
+  type: Method
+  source:
+    id: Restore
+    path: ''
+    startLine: 1265
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nRestore the random source with the given state\n"
+  example: []
+  syntax:
+    content: public void Restore(SystemRandomSource.State state)
+    parameters:
+    - id: state
+      type: RandomToolbox.SystemRandomSource.State
+      description: ''
+    content.vb: Public Sub Restore(state As SystemRandomSource.State)
+  overload: RandomToolbox.SystemRandomSource.Restore*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: RandomToolbox
+  commentId: N:RandomToolbox
+  name: RandomToolbox
+  nameWithType: RandomToolbox
+  fullName: RandomToolbox
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: RandomToolbox.RandomSourceBase
+  commentId: T:RandomToolbox.RandomSourceBase
+  parent: RandomToolbox
+  name: RandomSourceBase
+  nameWithType: RandomSourceBase
+  fullName: RandomToolbox.RandomSourceBase
+- uid: RandomToolbox.RandomSourceBase.m_seed
+  commentId: F:RandomToolbox.RandomSourceBase.m_seed
+  parent: RandomToolbox.RandomSourceBase
+  name: m_seed
+  nameWithType: RandomSourceBase.m_seed
+  fullName: RandomToolbox.RandomSourceBase.m_seed
+- uid: RandomToolbox.RandomSourceBase.SeedGenerator
+  commentId: F:RandomToolbox.RandomSourceBase.SeedGenerator
+  parent: RandomToolbox.RandomSourceBase
+  name: SeedGenerator
+  nameWithType: RandomSourceBase.SeedGenerator
+  fullName: RandomToolbox.RandomSourceBase.SeedGenerator
+- uid: RandomToolbox.RandomSourceBase.Seed
+  commentId: P:RandomToolbox.RandomSourceBase.Seed
+  parent: RandomToolbox.RandomSourceBase
+  name: Seed
+  nameWithType: RandomSourceBase.Seed
+  fullName: RandomToolbox.RandomSourceBase.Seed
+- uid: RandomToolbox.RandomSourceBase.Start(System.Int32)
+  commentId: M:RandomToolbox.RandomSourceBase.Start(System.Int32)
+  parent: RandomToolbox.RandomSourceBase
+  isExternal: true
+  name: Start(Int32)
+  nameWithType: RandomSourceBase.Start(Int32)
+  fullName: RandomToolbox.RandomSourceBase.Start(System.Int32)
+  spec.csharp:
+  - uid: RandomToolbox.RandomSourceBase.Start(System.Int32)
+    name: Start
+    nameWithType: RandomSourceBase.Start
+    fullName: RandomToolbox.RandomSourceBase.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.RandomSourceBase.Start(System.Int32)
+    name: Start
+    nameWithType: RandomSourceBase.Start
+    fullName: RandomToolbox.RandomSourceBase.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.RandomSourceBase.Start(System.Boolean)
+  commentId: M:RandomToolbox.RandomSourceBase.Start(System.Boolean)
+  parent: RandomToolbox.RandomSourceBase
+  isExternal: true
+  name: Start(Boolean)
+  nameWithType: RandomSourceBase.Start(Boolean)
+  fullName: RandomToolbox.RandomSourceBase.Start(System.Boolean)
+  spec.csharp:
+  - uid: RandomToolbox.RandomSourceBase.Start(System.Boolean)
+    name: Start
+    nameWithType: RandomSourceBase.Start
+    fullName: RandomToolbox.RandomSourceBase.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.RandomSourceBase.Start(System.Boolean)
+    name: Start
+    nameWithType: RandomSourceBase.Start
+    fullName: RandomToolbox.RandomSourceBase.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.RandomSourceBase.Start(RandomToolbox.SeedGenerators.Generator)
+  commentId: M:RandomToolbox.RandomSourceBase.Start(RandomToolbox.SeedGenerators.Generator)
+  parent: RandomToolbox.RandomSourceBase
+  name: Start(SeedGenerators.Generator)
+  nameWithType: RandomSourceBase.Start(SeedGenerators.Generator)
+  fullName: RandomToolbox.RandomSourceBase.Start(RandomToolbox.SeedGenerators.Generator)
+  spec.csharp:
+  - uid: RandomToolbox.RandomSourceBase.Start(RandomToolbox.SeedGenerators.Generator)
+    name: Start
+    nameWithType: RandomSourceBase.Start
+    fullName: RandomToolbox.RandomSourceBase.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RandomToolbox.SeedGenerators.Generator
+    name: SeedGenerators.Generator
+    nameWithType: SeedGenerators.Generator
+    fullName: RandomToolbox.SeedGenerators.Generator
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.RandomSourceBase.Start(RandomToolbox.SeedGenerators.Generator)
+    name: Start
+    nameWithType: RandomSourceBase.Start
+    fullName: RandomToolbox.RandomSourceBase.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RandomToolbox.SeedGenerators.Generator
+    name: SeedGenerators.Generator
+    nameWithType: SeedGenerators.Generator
+    fullName: RandomToolbox.SeedGenerators.Generator
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.RandomSourceBase.Reseed
+  commentId: M:RandomToolbox.RandomSourceBase.Reseed
+  parent: RandomToolbox.RandomSourceBase
+  name: Reseed()
+  nameWithType: RandomSourceBase.Reseed()
+  fullName: RandomToolbox.RandomSourceBase.Reseed()
+  spec.csharp:
+  - uid: RandomToolbox.RandomSourceBase.Reseed
+    name: Reseed
+    nameWithType: RandomSourceBase.Reseed
+    fullName: RandomToolbox.RandomSourceBase.Reseed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.RandomSourceBase.Reseed
+    name: Reseed
+    nameWithType: RandomSourceBase.Reseed
+    fullName: RandomToolbox.RandomSourceBase.Reseed
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RandomToolbox.SystemRandomSource.#ctor*
+  commentId: Overload:RandomToolbox.SystemRandomSource.#ctor
+  name: SystemRandomSource
+  nameWithType: SystemRandomSource.SystemRandomSource
+  fullName: RandomToolbox.SystemRandomSource.SystemRandomSource
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: RandomToolbox.RandomSourceBase.Start
+  commentId: M:RandomToolbox.RandomSourceBase.Start
+  parent: RandomToolbox.RandomSourceBase
+  name: Start()
+  nameWithType: RandomSourceBase.Start()
+  fullName: RandomToolbox.RandomSourceBase.Start()
+  spec.csharp:
+  - uid: RandomToolbox.RandomSourceBase.Start
+    name: Start
+    nameWithType: RandomSourceBase.Start
+    fullName: RandomToolbox.RandomSourceBase.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.RandomSourceBase.Start
+    name: Start
+    nameWithType: RandomSourceBase.Start
+    fullName: RandomToolbox.RandomSourceBase.Start
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.SystemRandomSource.Start*
+  commentId: Overload:RandomToolbox.SystemRandomSource.Start
+  name: Start
+  nameWithType: SystemRandomSource.Start
+  fullName: RandomToolbox.SystemRandomSource.Start
+- uid: RandomToolbox.SystemRandomSource.Next*
+  commentId: Overload:RandomToolbox.SystemRandomSource.Next
+  name: Next
+  nameWithType: SystemRandomSource.Next
+  fullName: RandomToolbox.SystemRandomSource.Next
+- uid: RandomToolbox.SystemRandomSource.NextBytes*
+  commentId: Overload:RandomToolbox.SystemRandomSource.NextBytes
+  name: NextBytes
+  nameWithType: SystemRandomSource.NextBytes
+  fullName: RandomToolbox.SystemRandomSource.NextBytes
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: RandomToolbox.SystemRandomSource.NextDouble*
+  commentId: Overload:RandomToolbox.SystemRandomSource.NextDouble
+  name: NextDouble
+  nameWithType: SystemRandomSource.NextDouble
+  fullName: RandomToolbox.SystemRandomSource.NextDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: RandomToolbox.SystemRandomSource.Save*
+  commentId: Overload:RandomToolbox.SystemRandomSource.Save
+  name: Save
+  nameWithType: SystemRandomSource.Save
+  fullName: RandomToolbox.SystemRandomSource.Save
+- uid: RandomToolbox.SystemRandomSource.State
+  commentId: T:RandomToolbox.SystemRandomSource.State
+  parent: RandomToolbox
+  name: SystemRandomSource.State
+  nameWithType: SystemRandomSource.State
+  fullName: RandomToolbox.SystemRandomSource.State
+- uid: RandomToolbox.SystemRandomSource.Restore*
+  commentId: Overload:RandomToolbox.SystemRandomSource.Restore
+  name: Restore
+  nameWithType: SystemRandomSource.Restore
+  fullName: RandomToolbox.SystemRandomSource.Restore

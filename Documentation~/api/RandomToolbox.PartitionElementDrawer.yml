@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: RandomToolbox.PartitionElementDrawer
+  commentId: T:RandomToolbox.PartitionElementDrawer
+  id: PartitionElementDrawer
+  parent: RandomToolbox
+  children:
+  - RandomToolbox.PartitionElementDrawer.GetIndexFromPath(System.String)
+  - RandomToolbox.PartitionElementDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  - RandomToolbox.PartitionElementDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  langs:
+  - csharp
+  - vb
+  name: PartitionElementDrawer
+  nameWithType: PartitionElementDrawer
+  fullName: RandomToolbox.PartitionElementDrawer
+  type: Class
+  source:
+    id: PartitionElementDrawer
+    path: ''
+    startLine: 335
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\ndrawer for elements in the list of a partition\n"
+  example: []
+  syntax:
+    content: 'public class PartitionElementDrawer : PropertyDrawer'
+    content.vb: >-
+      Public Class PartitionElementDrawer
+          Inherits PropertyDrawer
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: RandomToolbox.PartitionElementDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  commentId: M:RandomToolbox.PartitionElementDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
+  id: GetPropertyHeight(SerializedProperty,GUIContent)
+  parent: RandomToolbox.PartitionElementDrawer
+  langs:
+  - csharp
+  - vb
+  name: GetPropertyHeight(SerializedProperty, GUIContent)
+  nameWithType: PartitionElementDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  fullName: RandomToolbox.PartitionElementDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
+  type: Method
+  source:
+    id: GetPropertyHeight
+    path: ''
+    startLine: 396
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public override float GetPropertyHeight(SerializedProperty property, GUIContent label)
+    parameters:
+    - id: property
+      type: Global.SerializedProperty
+    - id: label
+      type: Global.GUIContent
+    return:
+      type: System.Single
+    content.vb: Public Overrides Function GetPropertyHeight(property As SerializedProperty, label As GUIContent) As Single
+  overload: RandomToolbox.PartitionElementDrawer.GetPropertyHeight*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: RandomToolbox.PartitionElementDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  commentId: M:RandomToolbox.PartitionElementDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
+  id: OnGUI(Rect,SerializedProperty,GUIContent)
+  parent: RandomToolbox.PartitionElementDrawer
+  langs:
+  - csharp
+  - vb
+  name: OnGUI(Rect, SerializedProperty, GUIContent)
+  nameWithType: PartitionElementDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  fullName: RandomToolbox.PartitionElementDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
+  type: Method
+  source:
+    id: OnGUI
+    path: ''
+    startLine: 420
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
+    parameters:
+    - id: position
+      type: Global.Rect
+    - id: property
+      type: Global.SerializedProperty
+    - id: label
+      type: Global.GUIContent
+    content.vb: Public Overrides Sub OnGUI(position As Rect, property As SerializedProperty, label As GUIContent)
+  overload: RandomToolbox.PartitionElementDrawer.OnGUI*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: RandomToolbox.PartitionElementDrawer.GetIndexFromPath(System.String)
+  commentId: M:RandomToolbox.PartitionElementDrawer.GetIndexFromPath(System.String)
+  id: GetIndexFromPath(System.String)
+  parent: RandomToolbox.PartitionElementDrawer
+  langs:
+  - csharp
+  - vb
+  name: GetIndexFromPath(String)
+  nameWithType: PartitionElementDrawer.GetIndexFromPath(String)
+  fullName: RandomToolbox.PartitionElementDrawer.GetIndexFromPath(System.String)
+  type: Method
+  source:
+    id: GetIndexFromPath
+    path: ''
+    startLine: 447
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nGet the index of a serialized property in a serialized array\n"
+  example: []
+  syntax:
+    content: public static int GetIndexFromPath(string path)
+    parameters:
+    - id: path
+      type: System.String
+      description: SerializedProperty.propertyPath
+    return:
+      type: System.Int32
+      description: index or -1 if not found
+    content.vb: Public Shared Function GetIndexFromPath(path As String) As Integer
+  overload: RandomToolbox.PartitionElementDrawer.GetIndexFromPath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: RandomToolbox
+  commentId: N:RandomToolbox
+  name: RandomToolbox
+  nameWithType: RandomToolbox
+  fullName: RandomToolbox
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RandomToolbox.PartitionElementDrawer.GetPropertyHeight*
+  commentId: Overload:RandomToolbox.PartitionElementDrawer.GetPropertyHeight
+  name: GetPropertyHeight
+  nameWithType: PartitionElementDrawer.GetPropertyHeight
+  fullName: RandomToolbox.PartitionElementDrawer.GetPropertyHeight
+- uid: Global.SerializedProperty
+  isExternal: true
+  name: SerializedProperty
+  nameWithType: SerializedProperty
+  fullName: SerializedProperty
+- uid: Global.GUIContent
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: GUIContent
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: RandomToolbox.PartitionElementDrawer.OnGUI*
+  commentId: Overload:RandomToolbox.PartitionElementDrawer.OnGUI
+  name: OnGUI
+  nameWithType: PartitionElementDrawer.OnGUI
+  fullName: RandomToolbox.PartitionElementDrawer.OnGUI
+- uid: Global.Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: RandomToolbox.PartitionElementDrawer.GetIndexFromPath*
+  commentId: Overload:RandomToolbox.PartitionElementDrawer.GetIndexFromPath
+  name: GetIndexFromPath
+  nameWithType: PartitionElementDrawer.GetIndexFromPath
+  fullName: RandomToolbox.PartitionElementDrawer.GetIndexFromPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

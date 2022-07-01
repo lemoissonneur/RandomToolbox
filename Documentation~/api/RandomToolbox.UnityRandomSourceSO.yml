@@ -1,0 +1,167 @@
+### YamlMime:ManagedReference
+items:
+- uid: RandomToolbox.UnityRandomSourceSO
+  commentId: T:RandomToolbox.UnityRandomSourceSO
+  id: UnityRandomSourceSO
+  parent: RandomToolbox
+  children:
+  - RandomToolbox.UnityRandomSourceSO.Instance
+  - RandomToolbox.UnityRandomSourceSO.m_baseInstance
+  langs:
+  - csharp
+  - vb
+  name: UnityRandomSourceSO
+  nameWithType: UnityRandomSourceSO
+  fullName: RandomToolbox.UnityRandomSourceSO
+  type: Class
+  source:
+    id: UnityRandomSourceSO
+    path: ''
+    startLine: 1296
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nA unityRandomSource instance contained in a ScriptableObject to be used\nin different scenes\n"
+  example: []
+  syntax:
+    content: 'public class UnityRandomSourceSO : RandomSourceBaseSO'
+    content.vb: >-
+      Public Class UnityRandomSourceSO
+          Inherits RandomSourceBaseSO
+  inheritance:
+  - System.Object
+  - RandomToolbox.RandomSourceBaseSO
+  inheritedMembers:
+  - RandomToolbox.RandomSourceBaseSO.InitializeOnAwake
+  - RandomToolbox.RandomSourceBaseSO.ReseedOnAwake
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: RandomToolbox.UnityRandomSourceSO.Instance
+  commentId: F:RandomToolbox.UnityRandomSourceSO.Instance
+  id: Instance
+  parent: RandomToolbox.UnityRandomSourceSO
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: UnityRandomSourceSO.Instance
+  fullName: RandomToolbox.UnityRandomSourceSO.Instance
+  type: Field
+  source:
+    id: Instance
+    path: ''
+    startLine: 1302
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nUnityRandomSource instance\n"
+  example: []
+  syntax:
+    content: public UnityRandomSource Instance
+    return:
+      type: RandomToolbox.UnityRandomSource
+    content.vb: Public Instance As UnityRandomSource
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: RandomToolbox.UnityRandomSourceSO.m_baseInstance
+  commentId: P:RandomToolbox.UnityRandomSourceSO.m_baseInstance
+  id: m_baseInstance
+  parent: RandomToolbox.UnityRandomSourceSO
+  langs:
+  - csharp
+  - vb
+  name: m_baseInstance
+  nameWithType: UnityRandomSourceSO.m_baseInstance
+  fullName: RandomToolbox.UnityRandomSourceSO.m_baseInstance
+  type: Property
+  source:
+    id: m_baseInstance
+    path: ''
+    startLine: 1307
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nOverride to give the base class acces to the derived RandomSourceBase instance\n"
+  example: []
+  syntax:
+    content: protected override RandomSourceBase m_baseInstance { get; }
+    parameters: []
+    return:
+      type: RandomToolbox.RandomSourceBase
+    content.vb: Protected Overrides ReadOnly Property m_baseInstance As RandomSourceBase
+  overridden: RandomToolbox.RandomSourceBaseSO.m_baseInstance
+  overload: RandomToolbox.UnityRandomSourceSO.m_baseInstance*
+  modifiers.csharp:
+  - protected
+  - override
+  - get
+  modifiers.vb:
+  - Protected
+  - Overrides
+  - ReadOnly
+references:
+- uid: RandomToolbox
+  commentId: N:RandomToolbox
+  name: RandomToolbox
+  nameWithType: RandomToolbox
+  fullName: RandomToolbox
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: RandomToolbox.RandomSourceBaseSO
+  commentId: T:RandomToolbox.RandomSourceBaseSO
+  parent: RandomToolbox
+  name: RandomSourceBaseSO
+  nameWithType: RandomSourceBaseSO
+  fullName: RandomToolbox.RandomSourceBaseSO
+- uid: RandomToolbox.RandomSourceBaseSO.InitializeOnAwake
+  commentId: P:RandomToolbox.RandomSourceBaseSO.InitializeOnAwake
+  parent: RandomToolbox.RandomSourceBaseSO
+  name: InitializeOnAwake
+  nameWithType: RandomSourceBaseSO.InitializeOnAwake
+  fullName: RandomToolbox.RandomSourceBaseSO.InitializeOnAwake
+- uid: RandomToolbox.RandomSourceBaseSO.ReseedOnAwake
+  commentId: P:RandomToolbox.RandomSourceBaseSO.ReseedOnAwake
+  parent: RandomToolbox.RandomSourceBaseSO
+  name: ReseedOnAwake
+  nameWithType: RandomSourceBaseSO.ReseedOnAwake
+  fullName: RandomToolbox.RandomSourceBaseSO.ReseedOnAwake
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RandomToolbox.UnityRandomSource
+  commentId: T:RandomToolbox.UnityRandomSource
+  parent: RandomToolbox
+  name: UnityRandomSource
+  nameWithType: UnityRandomSource
+  fullName: RandomToolbox.UnityRandomSource
+- uid: RandomToolbox.RandomSourceBaseSO.m_baseInstance
+  commentId: P:RandomToolbox.RandomSourceBaseSO.m_baseInstance
+  parent: RandomToolbox.RandomSourceBaseSO
+  name: m_baseInstance
+  nameWithType: RandomSourceBaseSO.m_baseInstance
+  fullName: RandomToolbox.RandomSourceBaseSO.m_baseInstance
+- uid: RandomToolbox.UnityRandomSourceSO.m_baseInstance*
+  commentId: Overload:RandomToolbox.UnityRandomSourceSO.m_baseInstance
+  name: m_baseInstance
+  nameWithType: UnityRandomSourceSO.m_baseInstance
+  fullName: RandomToolbox.UnityRandomSourceSO.m_baseInstance
+- uid: RandomToolbox.RandomSourceBase
+  commentId: T:RandomToolbox.RandomSourceBase
+  parent: RandomToolbox
+  name: RandomSourceBase
+  nameWithType: RandomSourceBase
+  fullName: RandomToolbox.RandomSourceBase

@@ -1,0 +1,86 @@
+
+<div id="sidetoggle">
+  <div>
+    <div class="sidefilter">
+      <form class="toc-filter">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <span class="glyphicon glyphicon-remove clear-icon" id="toc_filter_clear"></span>
+        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+      </form>
+    </div>
+    <div class="sidetoc">
+      <div class="toc" id="toc">
+          
+          <ul class="nav level1">
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="RandomToolbox.html" name="" title="RandomToolbox">RandomToolbox</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="RandomToolbox.Partition.html" name="" title="Partition">Partition</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.Partition.Element.html" name="" title="Partition.Element">Partition.Element</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.Partition-1.html" name="" title="Partition&lt;T&gt;">Partition&lt;T&gt;</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.Partition-1.Element.html" name="" title="Partition&lt;T&gt;.Element">Partition&lt;T&gt;.Element</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.PartitionBase.html" name="" title="PartitionBase">PartitionBase</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.PartitionBase.CorrectionRule.html" name="" title="PartitionBase.CorrectionRule">PartitionBase.CorrectionRule</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.PartitionBase.ElementBase.html" name="" title="PartitionBase.ElementBase">PartitionBase.ElementBase</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.PartitionDrawer.html" name="" title="PartitionDrawer">PartitionDrawer</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.PartitionElementDrawer.html" name="" title="PartitionElementDrawer">PartitionElementDrawer</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.PartitionTester.html" name="" title="PartitionTester">PartitionTester</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.RandomSourceBase.html" name="" title="RandomSourceBase">RandomSourceBase</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.RandomSourceBaseSO.html" name="" title="RandomSourceBaseSO">RandomSourceBaseSO</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.RandomSourcesTests.html" name="" title="RandomSourcesTests">RandomSourcesTests</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.SeedGenerators.html" name="" title="SeedGenerators">SeedGenerators</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.SeedGenerators.Generator.html" name="" title="SeedGenerators.Generator">SeedGenerators.Generator</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.SystemRandomSource.html" name="" title="SystemRandomSource">SystemRandomSource</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.SystemRandomSource.State.html" name="" title="SystemRandomSource.State">SystemRandomSource.State</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.SystemRandomSourceSO.html" name="" title="SystemRandomSourceSO">SystemRandomSourceSO</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.UnityRandomSource.html" name="" title="UnityRandomSource">UnityRandomSource</a>
+                          </li>
+                          <li>
+                              <a href="RandomToolbox.UnityRandomSourceSO.html" name="" title="UnityRandomSourceSO">UnityRandomSourceSO</a>
+                          </li>
+                    </ul>
+                </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

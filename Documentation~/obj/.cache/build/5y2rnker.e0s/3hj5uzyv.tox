@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UnityRandomSource
+   | Random Toolbox </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UnityRandomSource
+   | Random Toolbox ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RandomToolbox.UnityRandomSource">
+  
+  
+  <h1 id="RandomToolbox_UnityRandomSource" data-uid="RandomToolbox.UnityRandomSource" class="text-break">Class UnityRandomSource
+  </h1>
+  <div class="markdown level0 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Safe Random source based on UnityEngine.Random</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="RandomToolbox.RandomSourceBase.html">RandomSourceBase</a></div>
+    <div class="level2"><span class="xref">UnityRandomSource</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="RandomToolbox.RandomSourceBase.html#RandomToolbox_RandomSourceBase_m_seed">RandomSourceBase.m_seed</a>
+    </div>
+    <div>
+      <a class="xref" href="RandomToolbox.RandomSourceBase.html#RandomToolbox_RandomSourceBase_SeedGenerator">RandomSourceBase.SeedGenerator</a>
+    </div>
+    <div>
+      <a class="xref" href="RandomToolbox.RandomSourceBase.html#RandomToolbox_RandomSourceBase_Seed">RandomSourceBase.Seed</a>
+    </div>
+    <div>
+      <a class="xref" href="RandomToolbox.RandomSourceBase.html#RandomToolbox_RandomSourceBase_Start_System_Int32_">RandomSourceBase.Start(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="RandomToolbox.RandomSourceBase.html#RandomToolbox_RandomSourceBase_Start_System_Boolean_">RandomSourceBase.Start(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="RandomToolbox.RandomSourceBase.html#RandomToolbox_RandomSourceBase_Start_RandomToolbox_SeedGenerators_Generator_">RandomSourceBase.Start(SeedGenerators.Generator)</a>
+    </div>
+    <div>
+      <a class="xref" href="RandomToolbox.RandomSourceBase.html#RandomToolbox_RandomSourceBase_Reseed">RandomSourceBase.Reseed()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RandomToolbox.html">RandomToolbox</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="RandomToolbox_UnityRandomSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class UnityRandomSource : RandomSourceBase</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource__ctor_" data-uid="RandomToolbox.UnityRandomSource.#ctor*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource__ctor" data-uid="RandomToolbox.UnityRandomSource.#ctor">UnityRandomSource()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Instantiate a new UnityRandomSource but does not initialize it</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityRandomSource()</code></pre>
+  </div>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource__ctor_" data-uid="RandomToolbox.UnityRandomSource.#ctor*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource__ctor_RandomToolbox_SeedGenerators_Generator_" data-uid="RandomToolbox.UnityRandomSource.#ctor(RandomToolbox.SeedGenerators.Generator)">UnityRandomSource(SeedGenerators.Generator)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="3">Instantiate a new UnityRandomSource with a new generated seed
+based on given seed generator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityRandomSource(SeedGenerators.Generator seedGenerator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RandomToolbox.SeedGenerators.Generator.html">SeedGenerators.Generator</a></td>
+        <td><span class="parametername">seedGenerator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource__ctor_" data-uid="RandomToolbox.UnityRandomSource.#ctor*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource__ctor_System_Int32_" data-uid="RandomToolbox.UnityRandomSource.#ctor(System.Int32)">UnityRandomSource(Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Instantiate a new UnityRandomSource and Initialize with given seed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityRandomSource(int seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">seed</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Seed to initialize the random generator</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_insideUnitCircle_" data-uid="RandomToolbox.UnityRandomSource.insideUnitCircle*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_insideUnitCircle" data-uid="RandomToolbox.UnityRandomSource.insideUnitCircle">insideUnitCircle</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Returns a random point inside a circle with radius 1 (Read Only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 insideUnitCircle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_insideUnitSphere_" data-uid="RandomToolbox.UnityRandomSource.insideUnitSphere*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_insideUnitSphere" data-uid="RandomToolbox.UnityRandomSource.insideUnitSphere">insideUnitSphere</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Returns a random point inside a sphere with radius 1 (Read Only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 insideUnitSphere { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_onUnitSphere_" data-uid="RandomToolbox.UnityRandomSource.onUnitSphere*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_onUnitSphere" data-uid="RandomToolbox.UnityRandomSource.onUnitSphere">onUnitSphere</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Returns a random point on the surface of a sphere with radius 1 (Read Only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 onUnitSphere { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_rotation_" data-uid="RandomToolbox.UnityRandomSource.rotation*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_rotation" data-uid="RandomToolbox.UnityRandomSource.rotation">rotation</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Returns a random rotation (Read Only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion rotation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_rotationUniform_" data-uid="RandomToolbox.UnityRandomSource.rotationUniform*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_rotationUniform" data-uid="RandomToolbox.UnityRandomSource.rotationUniform">rotationUniform</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Returns a random rotation with uniform distribution (Read Only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion rotationUniform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Quaternion</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_value_" data-uid="RandomToolbox.UnityRandomSource.value*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_value" data-uid="RandomToolbox.UnityRandomSource.value">value</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Returns a random number between 0.0 [inclusive] and 1.0 [inclusive] (Read Only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_ColorHSV_" data-uid="RandomToolbox.UnityRandomSource.ColorHSV*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_ColorHSV" data-uid="RandomToolbox.UnityRandomSource.ColorHSV">ColorHSV()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Generates a random color from HSV and alpha ranges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ColorHSV()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">A random color with HSV and alpha values in the input ranges.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_ColorHSV_" data-uid="RandomToolbox.UnityRandomSource.ColorHSV*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_ColorHSV_System_Single_System_Single_" data-uid="RandomToolbox.UnityRandomSource.ColorHSV(System.Single,System.Single)">ColorHSV(Single, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Generates a random color from HSV and alpha ranges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ColorHSV(float hueMin, float hueMax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">hueMin</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Minimum hue [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">hueMax</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Maximum hue [0..1].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">A random color with HSV and alpha values in the input ranges.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_ColorHSV_" data-uid="RandomToolbox.UnityRandomSource.ColorHSV*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_ColorHSV_System_Single_System_Single_System_Single_System_Single_" data-uid="RandomToolbox.UnityRandomSource.ColorHSV(System.Single,System.Single,System.Single,System.Single)">ColorHSV(Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Generates a random color from HSV and alpha ranges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ColorHSV(float hueMin, float hueMax, float saturationMin, float saturationMax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">hueMin</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Minimum hue [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">hueMax</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Maximum hue [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">saturationMin</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Minimum saturation [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">saturationMax</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Maximum saturation[0..1].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">A random color with HSV and alpha values in the input ranges.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_ColorHSV_" data-uid="RandomToolbox.UnityRandomSource.ColorHSV*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_ColorHSV_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="RandomToolbox.UnityRandomSource.ColorHSV(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">ColorHSV(Single, Single, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Generates a random color from HSV and alpha ranges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ColorHSV(float hueMin, float hueMax, float saturationMin, float saturationMax, float valueMin, float valueMax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">hueMin</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Minimum hue [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">hueMax</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Maximum hue [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">saturationMin</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Minimum saturation [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">saturationMax</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Maximum saturation[0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">valueMin</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Minimum value [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">valueMax</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Maximum value [0..1].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">A random color with HSV and alpha values in the input ranges.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_ColorHSV_" data-uid="RandomToolbox.UnityRandomSource.ColorHSV*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_ColorHSV_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="RandomToolbox.UnityRandomSource.ColorHSV(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">ColorHSV(Single, Single, Single, Single, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Generates a random color from HSV and alpha ranges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color ColorHSV(float hueMin, float hueMax, float saturationMin, float saturationMax, float valueMin, float valueMax, float alphaMin, float alphaMax)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">hueMin</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Minimum hue [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">hueMax</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Maximum hue [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">saturationMin</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Minimum saturation [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">saturationMax</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Maximum saturation[0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">valueMin</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Minimum value [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">valueMax</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Maximum value [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">alphaMin</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Minimum alpha [0..1].</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">alphaMax</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">Maximum alpha [0..1].</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">A random color with HSV and alpha values in the input ranges.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_Range_" data-uid="RandomToolbox.UnityRandomSource.Range*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_Range_System_Int32_System_Int32_" data-uid="RandomToolbox.UnityRandomSource.Range(System.Int32,System.Int32)">Range(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Return a random integer number between min [inclusive] and max <a href="ReadOnly" data-raw-source="[exclusive] (ReadOnly)" sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">exclusive</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Range(int min, int max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">min int value [inclusive]</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">max int value [exclusive]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">random integer number</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_Range_" data-uid="RandomToolbox.UnityRandomSource.Range*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_Range_System_Single_System_Single_" data-uid="RandomToolbox.UnityRandomSource.Range(System.Single,System.Single)">Range(Single, Single)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Return a random float number between min [inclusive] and max <a href="ReadOnly" data-raw-source="[inclusive] (ReadOnly)" sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">inclusive</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Range(float min, float max)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">min</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">min float value [inclusive]</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">max</span></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">max float value [inclusive]</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="1" sourceendlinenumber="1">random float number</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_Restore_" data-uid="RandomToolbox.UnityRandomSource.Restore*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_Restore_System_Random_State_" data-uid="RandomToolbox.UnityRandomSource.Restore(System.Random.State)">Restore(Random.State)</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Restore the random source with the given state</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Restore(Random.State state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Random.State</span></td>
+        <td><span class="parametername">state</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_Save_" data-uid="RandomToolbox.UnityRandomSource.Save*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_Save" data-uid="RandomToolbox.UnityRandomSource.Save">Save()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Get the current state to save and restore it later</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Random.State Save()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Random.State</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="RandomToolbox_UnityRandomSource_Start_" data-uid="RandomToolbox.UnityRandomSource.Start*"></a>
+  <h4 id="RandomToolbox_UnityRandomSource_Start" data-uid="RandomToolbox.UnityRandomSource.Start">Start()</h4>
+  <div class="markdown level1 summary"><p sourcefile="api/RandomToolbox.UnityRandomSource.yml" sourcestartlinenumber="2" sourceendlinenumber="2">Initialize the Seed system with the current seed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Start()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RandomToolbox.RandomSourceBase.html#RandomToolbox_RandomSourceBase_Start">RandomSourceBase.Start()</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

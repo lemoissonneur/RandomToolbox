@@ -1,0 +1,1158 @@
+### YamlMime:ManagedReference
+items:
+- uid: RandomToolbox.Partition`1
+  commentId: T:RandomToolbox.Partition`1
+  id: Partition`1
+  parent: RandomToolbox
+  children:
+  - RandomToolbox.Partition`1._elements
+  - RandomToolbox.Partition`1.AddElement(RandomToolbox.Partition{`0}.Element,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  - RandomToolbox.Partition`1.AddElement(System.Single,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  - RandomToolbox.Partition`1.Contains(`0)
+  - RandomToolbox.Partition`1.Elements
+  - RandomToolbox.Partition`1.GetElement(System.Single)
+  - RandomToolbox.Partition`1.GetObject(System.Single)
+  - RandomToolbox.Partition`1.GetObject(System.Single,`0@)
+  - RandomToolbox.Partition`1.RemoveElementAt(System.Int32,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: Partition<T>
+  nameWithType: Partition<T>
+  fullName: RandomToolbox.Partition<T>
+  type: Class
+  source:
+    id: Partition
+    path: ''
+    startLine: 851
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Partition<T> : PartitionBase
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: >-
+      <Serializable>
+
+      Public Class Partition(Of T)
+          Inherits PartitionBase
+  inheritance:
+  - System.Object
+  - RandomToolbox.PartitionBase
+  inheritedMembers:
+  - RandomToolbox.PartitionBase.IsCorrect
+  - RandomToolbox.PartitionBase.GetIndex(System.Single)
+  - RandomToolbox.PartitionBase.SetValues(System.Single[],RandomToolbox.PartitionBase.CorrectionRule)
+  - RandomToolbox.PartitionBase.SetValue(System.Int32,System.Single,RandomToolbox.PartitionBase.CorrectionRule)
+  - RandomToolbox.PartitionBase.CorrectPartition(RandomToolbox.PartitionBase.CorrectionRule,System.Int32,System.Single,System.Single)
+  - RandomToolbox.PartitionBase.DefaultPartitionCorrection(System.Single[])
+  - RandomToolbox.PartitionBase.CorrectPartition(System.Single[],RandomToolbox.PartitionBase.CorrectionRule,System.Int32,System.Single,System.Single)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: Partition(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: RandomToolbox.Partition(Of T)
+  name.vb: Partition(Of T)
+- uid: RandomToolbox.Partition`1._elements
+  commentId: P:RandomToolbox.Partition`1._elements
+  id: _elements
+  parent: RandomToolbox.Partition`1
+  langs:
+  - csharp
+  - vb
+  name: _elements
+  nameWithType: Partition<T>._elements
+  fullName: RandomToolbox.Partition<T>._elements
+  type: Property
+  source:
+    id: _elements
+    path: ''
+    startLine: 863
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  syntax:
+    content: protected override IReadOnlyList<PartitionBase.ElementBase> _elements { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{RandomToolbox.PartitionBase.ElementBase}
+    content.vb: Protected Overrides ReadOnly Property _elements As IReadOnlyList(Of PartitionBase.ElementBase)
+  overridden: RandomToolbox.PartitionBase._elements
+  overload: RandomToolbox.Partition`1._elements*
+  nameWithType.vb: Partition(Of T)._elements
+  modifiers.csharp:
+  - protected
+  - override
+  - get
+  modifiers.vb:
+  - Protected
+  - Overrides
+  - ReadOnly
+  fullName.vb: RandomToolbox.Partition(Of T)._elements
+- uid: RandomToolbox.Partition`1.Elements
+  commentId: F:RandomToolbox.Partition`1.Elements
+  id: Elements
+  parent: RandomToolbox.Partition`1
+  langs:
+  - csharp
+  - vb
+  name: Elements
+  nameWithType: Partition<T>.Elements
+  fullName: RandomToolbox.Partition<T>.Elements
+  type: Field
+  source:
+    id: Elements
+    path: ''
+    startLine: 868
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nList of Elements in the partition\n"
+  example: []
+  syntax:
+    content: public List<Partition<T>.Element> Elements
+    return:
+      type: System.Collections.Generic.List{RandomToolbox.Partition`1.Element}
+    content.vb: Public Elements As List(Of Partition(Of T).Element)
+  nameWithType.vb: Partition(Of T).Elements
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RandomToolbox.Partition(Of T).Elements
+- uid: RandomToolbox.Partition`1.GetElement(System.Single)
+  commentId: M:RandomToolbox.Partition`1.GetElement(System.Single)
+  id: GetElement(System.Single)
+  parent: RandomToolbox.Partition`1
+  langs:
+  - csharp
+  - vb
+  name: GetElement(Single)
+  nameWithType: Partition<T>.GetElement(Single)
+  fullName: RandomToolbox.Partition<T>.GetElement(System.Single)
+  type: Method
+  source:
+    id: GetElement
+    path: ''
+    startLine: 875
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nShorthand for Elements[GetIndex(value)]\n"
+  example: []
+  syntax:
+    content: public Partition<T>.Element GetElement(float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: value in the 0-1 range
+    return:
+      type: RandomToolbox.Partition`1.Element
+      description: null if no element found
+    content.vb: Public Function GetElement(value As Single) As Partition(Of T).Element
+  overload: RandomToolbox.Partition`1.GetElement*
+  nameWithType.vb: Partition(Of T).GetElement(Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RandomToolbox.Partition(Of T).GetElement(System.Single)
+- uid: RandomToolbox.Partition`1.GetObject(System.Single)
+  commentId: M:RandomToolbox.Partition`1.GetObject(System.Single)
+  id: GetObject(System.Single)
+  parent: RandomToolbox.Partition`1
+  langs:
+  - csharp
+  - vb
+  name: GetObject(Single)
+  nameWithType: Partition<T>.GetObject(Single)
+  fullName: RandomToolbox.Partition<T>.GetObject(System.Single)
+  type: Method
+  source:
+    id: GetObject
+    path: ''
+    startLine: 887
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nShorthand for Elements[GetIndex(value)].Object\n"
+  example: []
+  syntax:
+    content: public T GetObject(float value)
+    parameters:
+    - id: value
+      type: System.Single
+      description: value in the 0-1 range
+    return:
+      type: '{T}'
+      description: default if no element found
+    content.vb: Public Function GetObject(value As Single) As T
+  overload: RandomToolbox.Partition`1.GetObject*
+  nameWithType.vb: Partition(Of T).GetObject(Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RandomToolbox.Partition(Of T).GetObject(System.Single)
+- uid: RandomToolbox.Partition`1.GetObject(System.Single,`0@)
+  commentId: M:RandomToolbox.Partition`1.GetObject(System.Single,`0@)
+  id: GetObject(System.Single,`0@)
+  parent: RandomToolbox.Partition`1
+  langs:
+  - csharp
+  - vb
+  name: GetObject(Single, out T)
+  nameWithType: Partition<T>.GetObject(Single, out T)
+  fullName: RandomToolbox.Partition<T>.GetObject(System.Single, out T)
+  type: Method
+  source:
+    id: GetObject
+    path: ''
+    startLine: 900
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public bool GetObject(float value, out T Object)
+    parameters:
+    - id: value
+      type: System.Single
+      description: ''
+    - id: Object
+      type: '{T}'
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function GetObject(value As Single, ByRef Object As T) As Boolean
+  overload: RandomToolbox.Partition`1.GetObject*
+  nameWithType.vb: Partition(Of T).GetObject(Single, ByRef T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RandomToolbox.Partition(Of T).GetObject(System.Single, ByRef T)
+  name.vb: GetObject(Single, ByRef T)
+- uid: RandomToolbox.Partition`1.Contains(`0)
+  commentId: M:RandomToolbox.Partition`1.Contains(`0)
+  id: Contains(`0)
+  parent: RandomToolbox.Partition`1
+  langs:
+  - csharp
+  - vb
+  name: Contains(T)
+  nameWithType: Partition<T>.Contains(T)
+  fullName: RandomToolbox.Partition<T>.Contains(T)
+  type: Method
+  source:
+    id: Contains
+    path: ''
+    startLine: 920
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public bool Contains(T obj)
+    parameters:
+    - id: obj
+      type: '{T}'
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function Contains(obj As T) As Boolean
+  overload: RandomToolbox.Partition`1.Contains*
+  nameWithType.vb: Partition(Of T).Contains(T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RandomToolbox.Partition(Of T).Contains(T)
+- uid: RandomToolbox.Partition`1.AddElement(RandomToolbox.Partition{`0}.Element,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  commentId: M:RandomToolbox.Partition`1.AddElement(RandomToolbox.Partition{`0}.Element,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  id: AddElement(RandomToolbox.Partition{`0}.Element,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  parent: RandomToolbox.Partition`1
+  langs:
+  - csharp
+  - vb
+  name: AddElement(Partition<T>.Element, PartitionBase.CorrectionRule, Single, Single)
+  nameWithType: Partition<T>.AddElement(Partition<T>.Element, PartitionBase.CorrectionRule, Single, Single)
+  fullName: RandomToolbox.Partition<T>.AddElement(RandomToolbox.Partition<T>.Element, RandomToolbox.PartitionBase.CorrectionRule, System.Single, System.Single)
+  type: Method
+  source:
+    id: AddElement
+    path: ''
+    startLine: 935
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public void AddElement(Partition<T>.Element element, PartitionBase.CorrectionRule rule = PartitionBase.CorrectionRule.AdjustAll, float minValue = 0F, float maxValue = 1F)
+    parameters:
+    - id: element
+      type: RandomToolbox.Partition`1.Element
+      description: ''
+    - id: rule
+      type: RandomToolbox.PartitionBase.CorrectionRule
+      description: ''
+    - id: minValue
+      type: System.Single
+      description: ''
+    - id: maxValue
+      type: System.Single
+      description: ''
+    content.vb: Public Sub AddElement(element As Partition(Of T).Element, rule As PartitionBase.CorrectionRule = PartitionBase.CorrectionRule.AdjustAll, minValue As Single = 0F, maxValue As Single = 1F)
+  overload: RandomToolbox.Partition`1.AddElement*
+  nameWithType.vb: Partition(Of T).AddElement(Partition(Of T).Element, PartitionBase.CorrectionRule, Single, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RandomToolbox.Partition(Of T).AddElement(RandomToolbox.Partition(Of T).Element, RandomToolbox.PartitionBase.CorrectionRule, System.Single, System.Single)
+  name.vb: AddElement(Partition(Of T).Element, PartitionBase.CorrectionRule, Single, Single)
+- uid: RandomToolbox.Partition`1.AddElement(System.Single,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  commentId: M:RandomToolbox.Partition`1.AddElement(System.Single,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  id: AddElement(System.Single,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  parent: RandomToolbox.Partition`1
+  langs:
+  - csharp
+  - vb
+  name: AddElement(Single, PartitionBase.CorrectionRule, Single, Single)
+  nameWithType: Partition<T>.AddElement(Single, PartitionBase.CorrectionRule, Single, Single)
+  fullName: RandomToolbox.Partition<T>.AddElement(System.Single, RandomToolbox.PartitionBase.CorrectionRule, System.Single, System.Single)
+  type: Method
+  source:
+    id: AddElement
+    path: ''
+    startLine: 949
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public void AddElement(float value, PartitionBase.CorrectionRule rule = PartitionBase.CorrectionRule.AdjustAll, float minValue = 0F, float maxValue = 1F)
+    parameters:
+    - id: value
+      type: System.Single
+      description: ''
+    - id: rule
+      type: RandomToolbox.PartitionBase.CorrectionRule
+      description: ''
+    - id: minValue
+      type: System.Single
+      description: ''
+    - id: maxValue
+      type: System.Single
+      description: ''
+    content.vb: Public Sub AddElement(value As Single, rule As PartitionBase.CorrectionRule = PartitionBase.CorrectionRule.AdjustAll, minValue As Single = 0F, maxValue As Single = 1F)
+  overload: RandomToolbox.Partition`1.AddElement*
+  nameWithType.vb: Partition(Of T).AddElement(Single, PartitionBase.CorrectionRule, Single, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RandomToolbox.Partition(Of T).AddElement(System.Single, RandomToolbox.PartitionBase.CorrectionRule, System.Single, System.Single)
+- uid: RandomToolbox.Partition`1.RemoveElementAt(System.Int32,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  commentId: M:RandomToolbox.Partition`1.RemoveElementAt(System.Int32,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  id: RemoveElementAt(System.Int32,RandomToolbox.PartitionBase.CorrectionRule,System.Single,System.Single)
+  parent: RandomToolbox.Partition`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveElementAt(Int32, PartitionBase.CorrectionRule, Single, Single)
+  nameWithType: Partition<T>.RemoveElementAt(Int32, PartitionBase.CorrectionRule, Single, Single)
+  fullName: RandomToolbox.Partition<T>.RemoveElementAt(System.Int32, RandomToolbox.PartitionBase.CorrectionRule, System.Single, System.Single)
+  type: Method
+  source:
+    id: RemoveElementAt
+    path: ''
+    startLine: 963
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public void RemoveElementAt(int index, PartitionBase.CorrectionRule rule = PartitionBase.CorrectionRule.AdjustAll, float minValue = 0F, float maxValue = 1F)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: ''
+    - id: rule
+      type: RandomToolbox.PartitionBase.CorrectionRule
+      description: ''
+    - id: minValue
+      type: System.Single
+      description: ''
+    - id: maxValue
+      type: System.Single
+      description: ''
+    content.vb: Public Sub RemoveElementAt(index As Integer, rule As PartitionBase.CorrectionRule = PartitionBase.CorrectionRule.AdjustAll, minValue As Single = 0F, maxValue As Single = 1F)
+  overload: RandomToolbox.Partition`1.RemoveElementAt*
+  nameWithType.vb: Partition(Of T).RemoveElementAt(Int32, PartitionBase.CorrectionRule, Single, Single)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RandomToolbox.Partition(Of T).RemoveElementAt(System.Int32, RandomToolbox.PartitionBase.CorrectionRule, System.Single, System.Single)
+references:
+- uid: RandomToolbox
+  commentId: N:RandomToolbox
+  name: RandomToolbox
+  nameWithType: RandomToolbox
+  fullName: RandomToolbox
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: RandomToolbox.PartitionBase
+  commentId: T:RandomToolbox.PartitionBase
+  parent: RandomToolbox
+  name: PartitionBase
+  nameWithType: PartitionBase
+  fullName: RandomToolbox.PartitionBase
+- uid: RandomToolbox.PartitionBase.IsCorrect
+  commentId: P:RandomToolbox.PartitionBase.IsCorrect
+  parent: RandomToolbox.PartitionBase
+  name: IsCorrect
+  nameWithType: PartitionBase.IsCorrect
+  fullName: RandomToolbox.PartitionBase.IsCorrect
+- uid: RandomToolbox.PartitionBase.GetIndex(System.Single)
+  commentId: M:RandomToolbox.PartitionBase.GetIndex(System.Single)
+  parent: RandomToolbox.PartitionBase
+  isExternal: true
+  name: GetIndex(Single)
+  nameWithType: PartitionBase.GetIndex(Single)
+  fullName: RandomToolbox.PartitionBase.GetIndex(System.Single)
+  spec.csharp:
+  - uid: RandomToolbox.PartitionBase.GetIndex(System.Single)
+    name: GetIndex
+    nameWithType: PartitionBase.GetIndex
+    fullName: RandomToolbox.PartitionBase.GetIndex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.PartitionBase.GetIndex(System.Single)
+    name: GetIndex
+    nameWithType: PartitionBase.GetIndex
+    fullName: RandomToolbox.PartitionBase.GetIndex
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.PartitionBase.SetValues(System.Single[],RandomToolbox.PartitionBase.CorrectionRule)
+  commentId: M:RandomToolbox.PartitionBase.SetValues(System.Single[],RandomToolbox.PartitionBase.CorrectionRule)
+  parent: RandomToolbox.PartitionBase
+  isExternal: true
+  name: SetValues(Single[], PartitionBase.CorrectionRule)
+  nameWithType: PartitionBase.SetValues(Single[], PartitionBase.CorrectionRule)
+  fullName: RandomToolbox.PartitionBase.SetValues(System.Single[], RandomToolbox.PartitionBase.CorrectionRule)
+  nameWithType.vb: PartitionBase.SetValues(Single(), PartitionBase.CorrectionRule)
+  fullName.vb: RandomToolbox.PartitionBase.SetValues(System.Single(), RandomToolbox.PartitionBase.CorrectionRule)
+  name.vb: SetValues(Single(), PartitionBase.CorrectionRule)
+  spec.csharp:
+  - uid: RandomToolbox.PartitionBase.SetValues(System.Single[],RandomToolbox.PartitionBase.CorrectionRule)
+    name: SetValues
+    nameWithType: PartitionBase.SetValues
+    fullName: RandomToolbox.PartitionBase.SetValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RandomToolbox.PartitionBase.CorrectionRule
+    name: PartitionBase.CorrectionRule
+    nameWithType: PartitionBase.CorrectionRule
+    fullName: RandomToolbox.PartitionBase.CorrectionRule
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.PartitionBase.SetValues(System.Single[],RandomToolbox.PartitionBase.CorrectionRule)
+    name: SetValues
+    nameWithType: PartitionBase.SetValues
+    fullName: RandomToolbox.PartitionBase.SetValues
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RandomToolbox.PartitionBase.CorrectionRule
+    name: PartitionBase.CorrectionRule
+    nameWithType: PartitionBase.CorrectionRule
+    fullName: RandomToolbox.PartitionBase.CorrectionRule
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.PartitionBase.SetValue(System.Int32,System.Single,RandomToolbox.PartitionBase.CorrectionRule)
+  commentId: M:RandomToolbox.PartitionBase.SetValue(System.Int32,System.Single,RandomToolbox.PartitionBase.CorrectionRule)
+  parent: RandomToolbox.PartitionBase
+  isExternal: true
+  name: SetValue(Int32, Single, PartitionBase.CorrectionRule)
+  nameWithType: PartitionBase.SetValue(Int32, Single, PartitionBase.CorrectionRule)
+  fullName: RandomToolbox.PartitionBase.SetValue(System.Int32, System.Single, RandomToolbox.PartitionBase.CorrectionRule)
+  spec.csharp:
+  - uid: RandomToolbox.PartitionBase.SetValue(System.Int32,System.Single,RandomToolbox.PartitionBase.CorrectionRule)
+    name: SetValue
+    nameWithType: PartitionBase.SetValue
+    fullName: RandomToolbox.PartitionBase.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RandomToolbox.PartitionBase.CorrectionRule
+    name: PartitionBase.CorrectionRule
+    nameWithType: PartitionBase.CorrectionRule
+    fullName: RandomToolbox.PartitionBase.CorrectionRule
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.PartitionBase.SetValue(System.Int32,System.Single,RandomToolbox.PartitionBase.CorrectionRule)
+    name: SetValue
+    nameWithType: PartitionBase.SetValue
+    fullName: RandomToolbox.PartitionBase.SetValue
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RandomToolbox.PartitionBase.CorrectionRule
+    name: PartitionBase.CorrectionRule
+    nameWithType: PartitionBase.CorrectionRule
+    fullName: RandomToolbox.PartitionBase.CorrectionRule
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.PartitionBase.CorrectPartition(RandomToolbox.PartitionBase.CorrectionRule,System.Int32,System.Single,System.Single)
+  commentId: M:RandomToolbox.PartitionBase.CorrectPartition(RandomToolbox.PartitionBase.CorrectionRule,System.Int32,System.Single,System.Single)
+  parent: RandomToolbox.PartitionBase
+  isExternal: true
+  name: CorrectPartition(PartitionBase.CorrectionRule, Int32, Single, Single)
+  nameWithType: PartitionBase.CorrectPartition(PartitionBase.CorrectionRule, Int32, Single, Single)
+  fullName: RandomToolbox.PartitionBase.CorrectPartition(RandomToolbox.PartitionBase.CorrectionRule, System.Int32, System.Single, System.Single)
+  spec.csharp:
+  - uid: RandomToolbox.PartitionBase.CorrectPartition(RandomToolbox.PartitionBase.CorrectionRule,System.Int32,System.Single,System.Single)
+    name: CorrectPartition
+    nameWithType: PartitionBase.CorrectPartition
+    fullName: RandomToolbox.PartitionBase.CorrectPartition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RandomToolbox.PartitionBase.CorrectionRule
+    name: PartitionBase.CorrectionRule
+    nameWithType: PartitionBase.CorrectionRule
+    fullName: RandomToolbox.PartitionBase.CorrectionRule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.PartitionBase.CorrectPartition(RandomToolbox.PartitionBase.CorrectionRule,System.Int32,System.Single,System.Single)
+    name: CorrectPartition
+    nameWithType: PartitionBase.CorrectPartition
+    fullName: RandomToolbox.PartitionBase.CorrectPartition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: RandomToolbox.PartitionBase.CorrectionRule
+    name: PartitionBase.CorrectionRule
+    nameWithType: PartitionBase.CorrectionRule
+    fullName: RandomToolbox.PartitionBase.CorrectionRule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.PartitionBase.DefaultPartitionCorrection(System.Single[])
+  commentId: M:RandomToolbox.PartitionBase.DefaultPartitionCorrection(System.Single[])
+  parent: RandomToolbox.PartitionBase
+  isExternal: true
+  name: DefaultPartitionCorrection(Single[])
+  nameWithType: PartitionBase.DefaultPartitionCorrection(Single[])
+  fullName: RandomToolbox.PartitionBase.DefaultPartitionCorrection(System.Single[])
+  nameWithType.vb: PartitionBase.DefaultPartitionCorrection(Single())
+  fullName.vb: RandomToolbox.PartitionBase.DefaultPartitionCorrection(System.Single())
+  name.vb: DefaultPartitionCorrection(Single())
+  spec.csharp:
+  - uid: RandomToolbox.PartitionBase.DefaultPartitionCorrection(System.Single[])
+    name: DefaultPartitionCorrection
+    nameWithType: PartitionBase.DefaultPartitionCorrection
+    fullName: RandomToolbox.PartitionBase.DefaultPartitionCorrection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.PartitionBase.DefaultPartitionCorrection(System.Single[])
+    name: DefaultPartitionCorrection
+    nameWithType: PartitionBase.DefaultPartitionCorrection
+    fullName: RandomToolbox.PartitionBase.DefaultPartitionCorrection
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.PartitionBase.CorrectPartition(System.Single[],RandomToolbox.PartitionBase.CorrectionRule,System.Int32,System.Single,System.Single)
+  commentId: M:RandomToolbox.PartitionBase.CorrectPartition(System.Single[],RandomToolbox.PartitionBase.CorrectionRule,System.Int32,System.Single,System.Single)
+  parent: RandomToolbox.PartitionBase
+  isExternal: true
+  name: CorrectPartition(Single[], PartitionBase.CorrectionRule, Int32, Single, Single)
+  nameWithType: PartitionBase.CorrectPartition(Single[], PartitionBase.CorrectionRule, Int32, Single, Single)
+  fullName: RandomToolbox.PartitionBase.CorrectPartition(System.Single[], RandomToolbox.PartitionBase.CorrectionRule, System.Int32, System.Single, System.Single)
+  nameWithType.vb: PartitionBase.CorrectPartition(Single(), PartitionBase.CorrectionRule, Int32, Single, Single)
+  fullName.vb: RandomToolbox.PartitionBase.CorrectPartition(System.Single(), RandomToolbox.PartitionBase.CorrectionRule, System.Int32, System.Single, System.Single)
+  name.vb: CorrectPartition(Single(), PartitionBase.CorrectionRule, Int32, Single, Single)
+  spec.csharp:
+  - uid: RandomToolbox.PartitionBase.CorrectPartition(System.Single[],RandomToolbox.PartitionBase.CorrectionRule,System.Int32,System.Single,System.Single)
+    name: CorrectPartition
+    nameWithType: PartitionBase.CorrectPartition
+    fullName: RandomToolbox.PartitionBase.CorrectPartition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RandomToolbox.PartitionBase.CorrectionRule
+    name: PartitionBase.CorrectionRule
+    nameWithType: PartitionBase.CorrectionRule
+    fullName: RandomToolbox.PartitionBase.CorrectionRule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: RandomToolbox.PartitionBase.CorrectPartition(System.Single[],RandomToolbox.PartitionBase.CorrectionRule,System.Int32,System.Single,System.Single)
+    name: CorrectPartition
+    nameWithType: PartitionBase.CorrectPartition
+    fullName: RandomToolbox.PartitionBase.CorrectPartition
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: RandomToolbox.PartitionBase.CorrectionRule
+    name: PartitionBase.CorrectionRule
+    nameWithType: PartitionBase.CorrectionRule
+    fullName: RandomToolbox.PartitionBase.CorrectionRule
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: RandomToolbox.PartitionBase._elements
+  commentId: P:RandomToolbox.PartitionBase._elements
+  parent: RandomToolbox.PartitionBase
+  name: _elements
+  nameWithType: PartitionBase._elements
+  fullName: RandomToolbox.PartitionBase._elements
+- uid: RandomToolbox.Partition`1._elements*
+  commentId: Overload:RandomToolbox.Partition`1._elements
+  name: _elements
+  nameWithType: Partition<T>._elements
+  fullName: RandomToolbox.Partition<T>._elements
+  nameWithType.vb: Partition(Of T)._elements
+  fullName.vb: RandomToolbox.Partition(Of T)._elements
+- uid: System.Collections.Generic.IReadOnlyList{RandomToolbox.PartitionBase.ElementBase}
+  commentId: T:System.Collections.Generic.IReadOnlyList{RandomToolbox.PartitionBase.ElementBase}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  name: IReadOnlyList<PartitionBase.ElementBase>
+  nameWithType: IReadOnlyList<PartitionBase.ElementBase>
+  fullName: System.Collections.Generic.IReadOnlyList<RandomToolbox.PartitionBase.ElementBase>
+  nameWithType.vb: IReadOnlyList(Of PartitionBase.ElementBase)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of RandomToolbox.PartitionBase.ElementBase)
+  name.vb: IReadOnlyList(Of PartitionBase.ElementBase)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RandomToolbox.PartitionBase.ElementBase
+    name: PartitionBase.ElementBase
+    nameWithType: PartitionBase.ElementBase
+    fullName: RandomToolbox.PartitionBase.ElementBase
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RandomToolbox.PartitionBase.ElementBase
+    name: PartitionBase.ElementBase
+    nameWithType: PartitionBase.ElementBase
+    fullName: RandomToolbox.PartitionBase.ElementBase
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    nameWithType: IReadOnlyList
+    fullName: System.Collections.Generic.IReadOnlyList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Collections.Generic.List{RandomToolbox.Partition`1.Element}
+  commentId: T:System.Collections.Generic.List{RandomToolbox.Partition`1.Element}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Partition.Element<>>
+  nameWithType: List<Partition.Element<>>
+  fullName: System.Collections.Generic.List<RandomToolbox.Partition.Element<>>
+  nameWithType.vb: List(Of Partition.Element(Of ))
+  fullName.vb: System.Collections.Generic.List(Of RandomToolbox.Partition.Element(Of ))
+  name.vb: List(Of Partition.Element(Of ))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: RandomToolbox.Partition`1.Element
+    name: Partition.Element
+    nameWithType: Partition.Element
+    fullName: RandomToolbox.Partition.Element
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: RandomToolbox.Partition`1.Element
+    name: Partition.Element
+    nameWithType: Partition.Element
+    fullName: RandomToolbox.Partition.Element
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.Partition`1.GetElement*
+  commentId: Overload:RandomToolbox.Partition`1.GetElement
+  name: GetElement
+  nameWithType: Partition<T>.GetElement
+  fullName: RandomToolbox.Partition<T>.GetElement
+  nameWithType.vb: Partition(Of T).GetElement
+  fullName.vb: RandomToolbox.Partition(Of T).GetElement
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: RandomToolbox.Partition`1.Element
+  commentId: T:RandomToolbox.Partition`1.Element
+  parent: RandomToolbox
+  name: Partition.Element<>
+  nameWithType: Partition.Element<>
+  fullName: RandomToolbox.Partition.Element<>
+  nameWithType.vb: Partition.Element(Of )
+  fullName.vb: RandomToolbox.Partition.Element(Of )
+  name.vb: Partition.Element(Of )
+  spec.csharp:
+  - uid: RandomToolbox.Partition`1.Element
+    name: Partition.Element
+    nameWithType: Partition.Element
+    fullName: RandomToolbox.Partition.Element
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: RandomToolbox.Partition`1.Element
+    name: Partition.Element
+    nameWithType: Partition.Element
+    fullName: RandomToolbox.Partition.Element
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: RandomToolbox.Partition`1.GetObject*
+  commentId: Overload:RandomToolbox.Partition`1.GetObject
+  name: GetObject
+  nameWithType: Partition<T>.GetObject
+  fullName: RandomToolbox.Partition<T>.GetObject
+  nameWithType.vb: Partition(Of T).GetObject
+  fullName.vb: RandomToolbox.Partition(Of T).GetObject
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: RandomToolbox.Partition`1.Contains*
+  commentId: Overload:RandomToolbox.Partition`1.Contains
+  name: Contains
+  nameWithType: Partition<T>.Contains
+  fullName: RandomToolbox.Partition<T>.Contains
+  nameWithType.vb: Partition(Of T).Contains
+  fullName.vb: RandomToolbox.Partition(Of T).Contains
+- uid: RandomToolbox.Partition`1.AddElement*
+  commentId: Overload:RandomToolbox.Partition`1.AddElement
+  name: AddElement
+  nameWithType: Partition<T>.AddElement
+  fullName: RandomToolbox.Partition<T>.AddElement
+  nameWithType.vb: Partition(Of T).AddElement
+  fullName.vb: RandomToolbox.Partition(Of T).AddElement
+- uid: RandomToolbox.PartitionBase.CorrectionRule
+  commentId: T:RandomToolbox.PartitionBase.CorrectionRule
+  parent: RandomToolbox
+  name: PartitionBase.CorrectionRule
+  nameWithType: PartitionBase.CorrectionRule
+  fullName: RandomToolbox.PartitionBase.CorrectionRule
+- uid: RandomToolbox.Partition`1.RemoveElementAt*
+  commentId: Overload:RandomToolbox.Partition`1.RemoveElementAt
+  name: RemoveElementAt
+  nameWithType: Partition<T>.RemoveElementAt
+  fullName: RandomToolbox.Partition<T>.RemoveElementAt
+  nameWithType.vb: Partition(Of T).RemoveElementAt
+  fullName.vb: RandomToolbox.Partition(Of T).RemoveElementAt
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

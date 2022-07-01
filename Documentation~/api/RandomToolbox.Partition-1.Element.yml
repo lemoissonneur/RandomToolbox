@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: RandomToolbox.Partition`1.Element
+  commentId: T:RandomToolbox.Partition`1.Element
+  id: Partition`1.Element
+  parent: RandomToolbox
+  children:
+  - RandomToolbox.Partition`1.Element.Object
+  langs:
+  - csharp
+  - vb
+  name: Partition<T>.Element
+  nameWithType: Partition<T>.Element
+  fullName: RandomToolbox.Partition<T>.Element
+  type: Class
+  source:
+    id: Element
+    path: ''
+    startLine: 854
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class Element : PartitionBase.ElementBase
+    content.vb: >-
+      <Serializable>
+
+      Public Class Element
+          Inherits PartitionBase.ElementBase
+  inheritance:
+  - System.Object
+  - RandomToolbox.PartitionBase.ElementBase
+  inheritedMembers:
+  - RandomToolbox.PartitionBase.ElementBase.Color
+  - RandomToolbox.PartitionBase.ElementBase.Value
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  nameWithType.vb: Partition(Of T).Element
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: RandomToolbox.Partition(Of T).Element
+  name.vb: Partition(Of T).Element
+- uid: RandomToolbox.Partition`1.Element.Object
+  commentId: F:RandomToolbox.Partition`1.Element.Object
+  id: Object
+  parent: RandomToolbox.Partition`1.Element
+  langs:
+  - csharp
+  - vb
+  name: Object
+  nameWithType: Partition<T>.Element.Object
+  fullName: RandomToolbox.Partition<T>.Element.Object
+  type: Field
+  source:
+    id: Object
+    path: ''
+    startLine: 860
+  assemblies:
+  - cs.temp.dll
+  namespace: RandomToolbox
+  summary: "\nCorresponding data for the elements\n"
+  example: []
+  syntax:
+    content: public T Object
+    return:
+      type: '{T}'
+    content.vb: Public Object As T
+  nameWithType.vb: Partition(Of T).Element.Object
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: RandomToolbox.Partition(Of T).Element.Object
+references:
+- uid: RandomToolbox
+  commentId: N:RandomToolbox
+  name: RandomToolbox
+  nameWithType: RandomToolbox
+  fullName: RandomToolbox
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: RandomToolbox.PartitionBase.ElementBase
+  commentId: T:RandomToolbox.PartitionBase.ElementBase
+  parent: RandomToolbox
+  name: PartitionBase.ElementBase
+  nameWithType: PartitionBase.ElementBase
+  fullName: RandomToolbox.PartitionBase.ElementBase
+- uid: RandomToolbox.PartitionBase.ElementBase.Color
+  commentId: F:RandomToolbox.PartitionBase.ElementBase.Color
+  parent: RandomToolbox.PartitionBase.ElementBase
+  name: Color
+  nameWithType: PartitionBase.ElementBase.Color
+  fullName: RandomToolbox.PartitionBase.ElementBase.Color
+- uid: RandomToolbox.PartitionBase.ElementBase.Value
+  commentId: F:RandomToolbox.PartitionBase.ElementBase.Value
+  parent: RandomToolbox.PartitionBase.ElementBase
+  name: Value
+  nameWithType: PartitionBase.ElementBase.Value
+  fullName: RandomToolbox.PartitionBase.ElementBase.Value
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
