@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: |
           cp README.md Documentation~/index.md
-          cp CHANGELOG.md Documentation~/manual/changelog.md
+          cp CHANGELOG.md Documentation~/changelog.md
           docfx Documentation~/docfx.json
 
       # Upload the generated documentation
