@@ -60,7 +60,7 @@ jobs:
       # push release on upm
       - name: upm release
         run: |
-          git add -A
+          git add Documentation~/offline
           git config --global user.name 'github-bot'
           git config --global user.email 'github-bot@users.noreply.github.com'
           if (git status --porcelain)
