@@ -71,14 +71,3 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Packages root meta
-CHANGELOG.md.meta
-LICENSE.md.meta
-README.md.meta
-Third Party Notices.md.meta
-package.json.meta
-Runtime.meta
-Editor.meta
-Samples.meta
-Tests.meta
-
