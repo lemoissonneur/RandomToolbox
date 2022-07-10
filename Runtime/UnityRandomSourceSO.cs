@@ -68,6 +68,15 @@ namespace RandomToolbox
         }
 
         /// <summary>
+        /// Instantiate a new UnityRandomSource with a given state
+        /// </summary>
+        /// <param name="state">the state to use for initialize</param>
+        public UnityRandomSource(Random.State state)
+        {
+            State = state;
+        }
+
+        /// <summary>
         /// Initialize the Seed system with the current seed
         /// </summary>
         public override void Start()
@@ -232,6 +241,12 @@ namespace RandomToolbox
             SaveState();
             return result;
         }
+
+        /// <summary>
+        /// Create a new instance with the same random state to be used to preview values
+        /// </summary>
+        /// <returns></returns>
+        public UnityRandomSource Sample => new UnityRandomSource(State);
 
         /// <summary>
         /// Get the current state to save and restore it later
