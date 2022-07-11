@@ -24,11 +24,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/RandomToolbox.CumulativeDistribution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RandomToolbox.CumulativeDistribution.html",
+          "hash": "+6uMs5567x8ooe4TzsVkHx1OFB8FxiSpH4P8som0CVk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RandomToolbox.CumulativeDistributionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RandomToolbox.CumulativeDistributionTests.html",
+          "hash": "OZNsWqcMe3zMsjdqupshY8iMG1zbykckpusvsAh75zc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RandomToolbox.Curve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RandomToolbox.Curve.html",
+          "hash": "WLdSvk/SXFFgQoT8Oue16w+9P89IIycBwQqmiE4l3qo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/RandomToolbox.Partition-1.Element.yml",
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.Partition-1.Element.html",
-          "hash": "jT36SZfxpgxNVNcI6wJO39omd+VF6U6+5ugoEDisTKY="
+          "hash": "L0LOsiwcvZtB89HcL+UyxWcG/5qU8vVUTx4FlAYaoAs="
         }
       },
       "is_incremental": false,
@@ -40,7 +76,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.Partition-1.html",
-          "hash": "bam4mUga7xlXqSLpMO/QrfYZvUa5NPU858WpYxYoEMs="
+          "hash": "HStNAxncAjvJogVfcf9BlKOb9bG2EIGQM1WtHAWSZXU="
         }
       },
       "is_incremental": false,
@@ -52,7 +88,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.Partition.Element.html",
-          "hash": "P9xmd1nneZyHTejygoqdwhJfKfU8/he5rj2nCx4csWw="
+          "hash": "pdH4bhuHHbcsmsnlDLzuzNDcJGIz/ApF8X+s9WQyuXc="
         }
       },
       "is_incremental": false,
@@ -64,7 +100,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.Partition.html",
-          "hash": "mXQHpLEVjQrmnPMa+5bfDcMKyh9b5LjX4j6F6OU1FTU="
+          "hash": "g8OgtcdcoK7Vec9GLaWTHHjfL3a0wtu96v0Kidy9tqw="
         }
       },
       "is_incremental": false,
@@ -76,7 +112,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.PartitionBase.CorrectionRule.html",
-          "hash": "pHY8K806eBzpVRqWkhzx+VcZUBAelK+pGBGyZHNhBOk="
+          "hash": "D/QOcHdYJkVQval7Zflynz0f8VDWVg+DavhsoEPLNWk="
         }
       },
       "is_incremental": false,
@@ -88,7 +124,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.PartitionBase.ElementBase.html",
-          "hash": "l5REIOgTP1HiZKBgLQO30yipMSOKUb48Pqb4vK5OShs="
+          "hash": "7RBIMhJoqazw2T1ENjFrOv9rXV0A9Nt35VJblFXB6p4="
         }
       },
       "is_incremental": false,
@@ -100,7 +136,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.PartitionBase.html",
-          "hash": "5tV63jfXp7sUosiCfwzIa1CFGeeq6lLMF6ps0BgfvB0="
+          "hash": "rVL+4JfUOzwuaHeP/lO/U19+7mNkP7c7EE2DbSsN8Ak="
         }
       },
       "is_incremental": false,
@@ -112,7 +148,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.PartitionDrawer.html",
-          "hash": "ZkbfRfkd6h8HIBB2prd4OjI5AYJuOvhuiaAHTB1+GEs="
+          "hash": "GJ7QTMxQpk5tOC+JTRZC81P5DDSMCcZYNO03VPoWgLE="
         }
       },
       "is_incremental": false,
@@ -124,7 +160,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.PartitionElementDrawer.html",
-          "hash": "dFzVz8CoI5D7dF3XXiYkJk6AeJwTG6C/yDcjI+C4KMc="
+          "hash": "vjUGH6dRD8XS1VGo+DYLM5Nhrkuq3sredwV1mzmMBg4="
         }
       },
       "is_incremental": false,
@@ -136,7 +172,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.PartitionTester.html",
-          "hash": "1P1U+eC34WpO3e/UWm1RbZE7EnI3uicXwkhjd6gOffI="
+          "hash": "mEx+m57kgV1lasjdX6stoRUIxQSdvUG2s/dve7gEyD8="
         }
       },
       "is_incremental": false,
@@ -148,7 +184,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.RandomSourceBase.html",
-          "hash": "ip6lstpKpktvRsjNseLcmPGFbq99mloq/GTBr6JR03g="
+          "hash": "d390Gcx0O3rCe6TsN2tviyGEBTUGuPcx3rO1V1t7BBc="
         }
       },
       "is_incremental": false,
@@ -160,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.RandomSourceBaseSO.html",
-          "hash": "EY3QxrbCNdVzVpF64ch54byq8Xzz79TNwvGWOFm6pMA="
+          "hash": "Bos1BvL3DjtAqB2qCT2J1KAK6LUQNJsg1JJdYoJ4ZxQ="
         }
       },
       "is_incremental": false,
@@ -172,7 +208,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.RandomSourcesTests.html",
-          "hash": "sE1S+vtYkB0O61vmccDIYgv+GDZx5BHtVNjdb5aTUUc="
+          "hash": "8kjR/wgMVLkzEwQDPvS+usck72yi69Cg4aPR5FezUgs="
         }
       },
       "is_incremental": false,
@@ -184,7 +220,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.SeedGenerators.Generator.html",
-          "hash": "br/KguDIQ8eooZdKpc39W9RHi/x4ETxR9Eq13qhAK7Q="
+          "hash": "PaU0Kk20bWQ+Bhex3JVaCwYxe138PKxDStR/T6gE4x8="
         }
       },
       "is_incremental": false,
@@ -196,7 +232,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.SeedGenerators.html",
-          "hash": "rJv5jVW75Uuf3J3Qnc13xdltd0TGc2OUSNUGRzV+kRE="
+          "hash": "pvc00pg08uMxwR2jJX5FoX17mR2qHn9UjPgGA0t2DDY="
         }
       },
       "is_incremental": false,
@@ -208,7 +244,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.SystemRandomSource.State.html",
-          "hash": "/L7tsaQaYWEvb9p1KR2IS8JnGDq2QblBbupb/WJYFVA="
+          "hash": "NVXkQ9hYG5fCFMSbOy74oya2YwKTP8OhlT3r+fgyv64="
         }
       },
       "is_incremental": false,
@@ -220,7 +256,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.SystemRandomSource.html",
-          "hash": "m91CQz0cACEG14WeAKYiaT9c5eySHME0zDpGqQLb3Ik="
+          "hash": "pJLwCtfKx25YTOoHb7Edmh6Q0s9HJb3/VNwxdHM8J00="
         }
       },
       "is_incremental": false,
@@ -232,7 +268,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.SystemRandomSourceSO.html",
-          "hash": "7vJVVAjEmmGaOuC+CXxpxrauZkz0og/q0HorhIBwze4="
+          "hash": "gSmPxFgu2JmqbYOjbPXZfdNuU8jUh5mpRdKboG2aKPc="
         }
       },
       "is_incremental": false,
@@ -247,7 +283,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.UnityRandomSource.html",
-          "hash": "wzIdsKOARMs92NlCCHiI0K8de4rjgtdLQ7BsHSeeZOw="
+          "hash": "c1Uc9MbUJ7+l6VzseEGPVFDGZXLvJdixO/2+TWgs5jw="
         }
       },
       "is_incremental": false,
@@ -259,7 +295,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.UnityRandomSourceSO.html",
-          "hash": "1HYCSsBQ9oOGM460lYfJ97aFkzby+YcoX65QQkFqbCc="
+          "hash": "QTRZCmHA4dvnS+vbld5aqhxF3NCUXAJa7+BwwO1wync="
         }
       },
       "is_incremental": false,
@@ -271,7 +307,7 @@
       "output": {
         ".html": {
           "relative_path": "api/RandomToolbox.html",
-          "hash": "0Z7LgIwHKdNStHUlQ5T23r7P+OtWw9tA03NqxN1A23A="
+          "hash": "nu+eGHB81d1TPfLA+7BwOIEjoPFgtA0oQhVQkObXCxQ="
         }
       },
       "is_incremental": false,
@@ -283,7 +319,18 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "IFjJvmvpdWVE+33ibja4IPKPL0MrkNgM9HNq7aQgSWw="
+          "hash": "xZUqiRrOoTMCDWhci9QqzPy9TpU8LzGVDApWKRknN7k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/Distribution.PNG",
+      "output": {
+        "resource": {
+          "relative_path": "resources/Distribution.PNG"
         }
       },
       "is_incremental": false,
@@ -321,7 +368,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 21,
+          "total_file_count": 24,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

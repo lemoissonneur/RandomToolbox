@@ -7,6 +7,220 @@ references:
   commentId: N:RandomToolbox
   fullName: RandomToolbox
   nameWithType: RandomToolbox
+- uid: RandomToolbox.CumulativeDistribution
+  name: CumulativeDistribution
+  href: api/RandomToolbox.CumulativeDistribution.html
+  commentId: T:RandomToolbox.CumulativeDistribution
+  fullName: RandomToolbox.CumulativeDistribution
+  nameWithType: CumulativeDistribution
+- uid: RandomToolbox.CumulativeDistribution.#ctor(AnimationCurve,System.Int32)
+  name: CumulativeDistribution(AnimationCurve, Int32)
+  href: api/RandomToolbox.CumulativeDistribution.html#RandomToolbox_CumulativeDistribution__ctor_AnimationCurve_System_Int32_
+  commentId: M:RandomToolbox.CumulativeDistribution.#ctor(AnimationCurve,System.Int32)
+  fullName: RandomToolbox.CumulativeDistribution.CumulativeDistribution(AnimationCurve, System.Int32)
+  nameWithType: CumulativeDistribution.CumulativeDistribution(AnimationCurve, Int32)
+- uid: RandomToolbox.CumulativeDistribution.#ctor(System.Func{System.Single,System.Single},System.Single,System.Single,System.Int32)
+  name: CumulativeDistribution(Func<Single, Single>, Single, Single, Int32)
+  href: api/RandomToolbox.CumulativeDistribution.html#RandomToolbox_CumulativeDistribution__ctor_System_Func_System_Single_System_Single__System_Single_System_Single_System_Int32_
+  commentId: M:RandomToolbox.CumulativeDistribution.#ctor(System.Func{System.Single,System.Single},System.Single,System.Single,System.Int32)
+  name.vb: CumulativeDistribution(Func(Of Single, Single), Single, Single, Int32)
+  fullName: RandomToolbox.CumulativeDistribution.CumulativeDistribution(System.Func<System.Single, System.Single>, System.Single, System.Single, System.Int32)
+  fullName.vb: RandomToolbox.CumulativeDistribution.CumulativeDistribution(System.Func(Of System.Single, System.Single), System.Single, System.Single, System.Int32)
+  nameWithType: CumulativeDistribution.CumulativeDistribution(Func<Single, Single>, Single, Single, Int32)
+  nameWithType.vb: CumulativeDistribution.CumulativeDistribution(Func(Of Single, Single), Single, Single, Int32)
+- uid: RandomToolbox.CumulativeDistribution.#ctor*
+  name: CumulativeDistribution
+  href: api/RandomToolbox.CumulativeDistribution.html#RandomToolbox_CumulativeDistribution__ctor_
+  commentId: Overload:RandomToolbox.CumulativeDistribution.#ctor
+  isSpec: "True"
+  fullName: RandomToolbox.CumulativeDistribution.CumulativeDistribution
+  nameWithType: CumulativeDistribution.CumulativeDistribution
+- uid: RandomToolbox.CumulativeDistribution.GetValue(RandomToolbox.UnityRandomSource)
+  name: GetValue(UnityRandomSource)
+  href: api/RandomToolbox.CumulativeDistribution.html#RandomToolbox_CumulativeDistribution_GetValue_RandomToolbox_UnityRandomSource_
+  commentId: M:RandomToolbox.CumulativeDistribution.GetValue(RandomToolbox.UnityRandomSource)
+  fullName: RandomToolbox.CumulativeDistribution.GetValue(RandomToolbox.UnityRandomSource)
+  nameWithType: CumulativeDistribution.GetValue(UnityRandomSource)
+- uid: RandomToolbox.CumulativeDistribution.GetValue(RandomToolbox.UnityRandomSourceSO)
+  name: GetValue(UnityRandomSourceSO)
+  href: api/RandomToolbox.CumulativeDistribution.html#RandomToolbox_CumulativeDistribution_GetValue_RandomToolbox_UnityRandomSourceSO_
+  commentId: M:RandomToolbox.CumulativeDistribution.GetValue(RandomToolbox.UnityRandomSourceSO)
+  fullName: RandomToolbox.CumulativeDistribution.GetValue(RandomToolbox.UnityRandomSourceSO)
+  nameWithType: CumulativeDistribution.GetValue(UnityRandomSourceSO)
+- uid: RandomToolbox.CumulativeDistribution.GetValue(System.Single)
+  name: GetValue(Single)
+  href: api/RandomToolbox.CumulativeDistribution.html#RandomToolbox_CumulativeDistribution_GetValue_System_Single_
+  commentId: M:RandomToolbox.CumulativeDistribution.GetValue(System.Single)
+  fullName: RandomToolbox.CumulativeDistribution.GetValue(System.Single)
+  nameWithType: CumulativeDistribution.GetValue(Single)
+- uid: RandomToolbox.CumulativeDistribution.GetValue*
+  name: GetValue
+  href: api/RandomToolbox.CumulativeDistribution.html#RandomToolbox_CumulativeDistribution_GetValue_
+  commentId: Overload:RandomToolbox.CumulativeDistribution.GetValue
+  isSpec: "True"
+  fullName: RandomToolbox.CumulativeDistribution.GetValue
+  nameWithType: CumulativeDistribution.GetValue
+- uid: RandomToolbox.CumulativeDistribution.InverseCumulativeDistribution
+  name: InverseCumulativeDistribution
+  href: api/RandomToolbox.CumulativeDistribution.html#RandomToolbox_CumulativeDistribution_InverseCumulativeDistribution
+  commentId: F:RandomToolbox.CumulativeDistribution.InverseCumulativeDistribution
+  fullName: RandomToolbox.CumulativeDistribution.InverseCumulativeDistribution
+  nameWithType: CumulativeDistribution.InverseCumulativeDistribution
+- uid: RandomToolbox.CumulativeDistributionTests
+  name: CumulativeDistributionTests
+  href: api/RandomToolbox.CumulativeDistributionTests.html
+  commentId: T:RandomToolbox.CumulativeDistributionTests
+  fullName: RandomToolbox.CumulativeDistributionTests
+  nameWithType: CumulativeDistributionTests
+- uid: RandomToolbox.CumulativeDistributionTests.CumulativeDistributionNormalResults
+  name: CumulativeDistributionNormalResults()
+  href: api/RandomToolbox.CumulativeDistributionTests.html#RandomToolbox_CumulativeDistributionTests_CumulativeDistributionNormalResults
+  commentId: M:RandomToolbox.CumulativeDistributionTests.CumulativeDistributionNormalResults
+  fullName: RandomToolbox.CumulativeDistributionTests.CumulativeDistributionNormalResults()
+  nameWithType: CumulativeDistributionTests.CumulativeDistributionNormalResults()
+- uid: RandomToolbox.CumulativeDistributionTests.CumulativeDistributionNormalResults*
+  name: CumulativeDistributionNormalResults
+  href: api/RandomToolbox.CumulativeDistributionTests.html#RandomToolbox_CumulativeDistributionTests_CumulativeDistributionNormalResults_
+  commentId: Overload:RandomToolbox.CumulativeDistributionTests.CumulativeDistributionNormalResults
+  isSpec: "True"
+  fullName: RandomToolbox.CumulativeDistributionTests.CumulativeDistributionNormalResults
+  nameWithType: CumulativeDistributionTests.CumulativeDistributionNormalResults
+- uid: RandomToolbox.CumulativeDistributionTests.CurveSampleCount
+  name: CurveSampleCount
+  href: api/RandomToolbox.CumulativeDistributionTests.html#RandomToolbox_CumulativeDistributionTests_CurveSampleCount
+  commentId: F:RandomToolbox.CumulativeDistributionTests.CurveSampleCount
+  fullName: RandomToolbox.CumulativeDistributionTests.CurveSampleCount
+  nameWithType: CumulativeDistributionTests.CurveSampleCount
+- uid: RandomToolbox.CumulativeDistributionTests.EvaluateNormalY(System.Single,System.Single,System.Single)
+  name: EvaluateNormalY(Single, Single, Single)
+  href: api/RandomToolbox.CumulativeDistributionTests.html#RandomToolbox_CumulativeDistributionTests_EvaluateNormalY_System_Single_System_Single_System_Single_
+  commentId: M:RandomToolbox.CumulativeDistributionTests.EvaluateNormalY(System.Single,System.Single,System.Single)
+  fullName: RandomToolbox.CumulativeDistributionTests.EvaluateNormalY(System.Single, System.Single, System.Single)
+  nameWithType: CumulativeDistributionTests.EvaluateNormalY(Single, Single, Single)
+- uid: RandomToolbox.CumulativeDistributionTests.EvaluateNormalY*
+  name: EvaluateNormalY
+  href: api/RandomToolbox.CumulativeDistributionTests.html#RandomToolbox_CumulativeDistributionTests_EvaluateNormalY_
+  commentId: Overload:RandomToolbox.CumulativeDistributionTests.EvaluateNormalY
+  isSpec: "True"
+  fullName: RandomToolbox.CumulativeDistributionTests.EvaluateNormalY
+  nameWithType: CumulativeDistributionTests.EvaluateNormalY
+- uid: RandomToolbox.CumulativeDistributionTests.ResultsSampleCount
+  name: ResultsSampleCount
+  href: api/RandomToolbox.CumulativeDistributionTests.html#RandomToolbox_CumulativeDistributionTests_ResultsSampleCount
+  commentId: F:RandomToolbox.CumulativeDistributionTests.ResultsSampleCount
+  fullName: RandomToolbox.CumulativeDistributionTests.ResultsSampleCount
+  nameWithType: CumulativeDistributionTests.ResultsSampleCount
+- uid: RandomToolbox.CumulativeDistributionTests.ResultsSampleWidth
+  name: ResultsSampleWidth
+  href: api/RandomToolbox.CumulativeDistributionTests.html#RandomToolbox_CumulativeDistributionTests_ResultsSampleWidth
+  commentId: F:RandomToolbox.CumulativeDistributionTests.ResultsSampleWidth
+  fullName: RandomToolbox.CumulativeDistributionTests.ResultsSampleWidth
+  nameWithType: CumulativeDistributionTests.ResultsSampleWidth
+- uid: RandomToolbox.CumulativeDistributionTests.ResultsTolerance
+  name: ResultsTolerance
+  href: api/RandomToolbox.CumulativeDistributionTests.html#RandomToolbox_CumulativeDistributionTests_ResultsTolerance
+  commentId: F:RandomToolbox.CumulativeDistributionTests.ResultsTolerance
+  fullName: RandomToolbox.CumulativeDistributionTests.ResultsTolerance
+  nameWithType: CumulativeDistributionTests.ResultsTolerance
+- uid: RandomToolbox.Curve
+  name: Curve
+  href: api/RandomToolbox.Curve.html
+  commentId: T:RandomToolbox.Curve
+  fullName: RandomToolbox.Curve
+  nameWithType: Curve
+- uid: RandomToolbox.Curve.Evaluate(System.Single)
+  name: Evaluate(Single)
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Evaluate_System_Single_
+  commentId: M:RandomToolbox.Curve.Evaluate(System.Single)
+  fullName: RandomToolbox.Curve.Evaluate(System.Single)
+  nameWithType: Curve.Evaluate(Single)
+- uid: RandomToolbox.Curve.Evaluate*
+  name: Evaluate
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Evaluate_
+  commentId: Overload:RandomToolbox.Curve.Evaluate
+  isSpec: "True"
+  fullName: RandomToolbox.Curve.Evaluate
+  nameWithType: Curve.Evaluate
+- uid: RandomToolbox.Curve.Integrate(AnimationCurve,System.Single,System.Single,System.Int32)
+  name: Integrate(AnimationCurve, Single, Single, Int32)
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Integrate_AnimationCurve_System_Single_System_Single_System_Int32_
+  commentId: M:RandomToolbox.Curve.Integrate(AnimationCurve,System.Single,System.Single,System.Int32)
+  fullName: RandomToolbox.Curve.Integrate(AnimationCurve, System.Single, System.Single, System.Int32)
+  nameWithType: Curve.Integrate(AnimationCurve, Single, Single, Int32)
+- uid: RandomToolbox.Curve.Integrate(RandomToolbox.Curve,System.Single,System.Single,System.Int32)
+  name: Integrate(Curve, Single, Single, Int32)
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Integrate_RandomToolbox_Curve_System_Single_System_Single_System_Int32_
+  commentId: M:RandomToolbox.Curve.Integrate(RandomToolbox.Curve,System.Single,System.Single,System.Int32)
+  fullName: RandomToolbox.Curve.Integrate(RandomToolbox.Curve, System.Single, System.Single, System.Int32)
+  nameWithType: Curve.Integrate(Curve, Single, Single, Int32)
+- uid: RandomToolbox.Curve.Integrate(System.Func{System.Single,System.Single},System.Single,System.Single,System.Int32)
+  name: Integrate(Func<Single, Single>, Single, Single, Int32)
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Integrate_System_Func_System_Single_System_Single__System_Single_System_Single_System_Int32_
+  commentId: M:RandomToolbox.Curve.Integrate(System.Func{System.Single,System.Single},System.Single,System.Single,System.Int32)
+  name.vb: Integrate(Func(Of Single, Single), Single, Single, Int32)
+  fullName: RandomToolbox.Curve.Integrate(System.Func<System.Single, System.Single>, System.Single, System.Single, System.Int32)
+  fullName.vb: RandomToolbox.Curve.Integrate(System.Func(Of System.Single, System.Single), System.Single, System.Single, System.Int32)
+  nameWithType: Curve.Integrate(Func<Single, Single>, Single, Single, Int32)
+  nameWithType.vb: Curve.Integrate(Func(Of Single, Single), Single, Single, Int32)
+- uid: RandomToolbox.Curve.Integrate*
+  name: Integrate
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Integrate_
+  commentId: Overload:RandomToolbox.Curve.Integrate
+  isSpec: "True"
+  fullName: RandomToolbox.Curve.Integrate
+  nameWithType: Curve.Integrate
+- uid: RandomToolbox.Curve.Invert(RandomToolbox.Curve)
+  name: Invert(Curve)
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Invert_RandomToolbox_Curve_
+  commentId: M:RandomToolbox.Curve.Invert(RandomToolbox.Curve)
+  fullName: RandomToolbox.Curve.Invert(RandomToolbox.Curve)
+  nameWithType: Curve.Invert(Curve)
+- uid: RandomToolbox.Curve.Invert*
+  name: Invert
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Invert_
+  commentId: Overload:RandomToolbox.Curve.Invert
+  isSpec: "True"
+  fullName: RandomToolbox.Curve.Invert
+  nameWithType: Curve.Invert
+- uid: RandomToolbox.Curve.Length
+  name: Length
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Length
+  commentId: P:RandomToolbox.Curve.Length
+  fullName: RandomToolbox.Curve.Length
+  nameWithType: Curve.Length
+- uid: RandomToolbox.Curve.Length*
+  name: Length
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Length_
+  commentId: Overload:RandomToolbox.Curve.Length
+  isSpec: "True"
+  fullName: RandomToolbox.Curve.Length
+  nameWithType: Curve.Length
+- uid: RandomToolbox.Curve.Max
+  name: Max
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Max
+  commentId: P:RandomToolbox.Curve.Max
+  fullName: RandomToolbox.Curve.Max
+  nameWithType: Curve.Max
+- uid: RandomToolbox.Curve.Max*
+  name: Max
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Max_
+  commentId: Overload:RandomToolbox.Curve.Max
+  isSpec: "True"
+  fullName: RandomToolbox.Curve.Max
+  nameWithType: Curve.Max
+- uid: RandomToolbox.Curve.Min
+  name: Min
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Min
+  commentId: P:RandomToolbox.Curve.Min
+  fullName: RandomToolbox.Curve.Min
+  nameWithType: Curve.Min
+- uid: RandomToolbox.Curve.Min*
+  name: Min
+  href: api/RandomToolbox.Curve.html#RandomToolbox_Curve_Min_
+  commentId: Overload:RandomToolbox.Curve.Min
+  isSpec: "True"
+  fullName: RandomToolbox.Curve.Min
+  nameWithType: Curve.Min
 - uid: RandomToolbox.Partition
   name: Partition
   href: api/RandomToolbox.Partition.html
@@ -1003,6 +1217,12 @@ references:
   commentId: M:RandomToolbox.UnityRandomSource.#ctor(System.Int32)
   fullName: RandomToolbox.UnityRandomSource.UnityRandomSource(System.Int32)
   nameWithType: UnityRandomSource.UnityRandomSource(Int32)
+- uid: RandomToolbox.UnityRandomSource.#ctor(System.Random.State)
+  name: UnityRandomSource(Random.State)
+  href: api/RandomToolbox.UnityRandomSource.html#RandomToolbox_UnityRandomSource__ctor_System_Random_State_
+  commentId: M:RandomToolbox.UnityRandomSource.#ctor(System.Random.State)
+  fullName: RandomToolbox.UnityRandomSource.UnityRandomSource(System.Random.State)
+  nameWithType: UnityRandomSource.UnityRandomSource(Random.State)
 - uid: RandomToolbox.UnityRandomSource.#ctor*
   name: UnityRandomSource
   href: api/RandomToolbox.UnityRandomSource.html#RandomToolbox_UnityRandomSource__ctor_
@@ -1144,6 +1364,19 @@ references:
   isSpec: "True"
   fullName: RandomToolbox.UnityRandomSource.rotationUniform
   nameWithType: UnityRandomSource.rotationUniform
+- uid: RandomToolbox.UnityRandomSource.Sample
+  name: Sample
+  href: api/RandomToolbox.UnityRandomSource.html#RandomToolbox_UnityRandomSource_Sample
+  commentId: P:RandomToolbox.UnityRandomSource.Sample
+  fullName: RandomToolbox.UnityRandomSource.Sample
+  nameWithType: UnityRandomSource.Sample
+- uid: RandomToolbox.UnityRandomSource.Sample*
+  name: Sample
+  href: api/RandomToolbox.UnityRandomSource.html#RandomToolbox_UnityRandomSource_Sample_
+  commentId: Overload:RandomToolbox.UnityRandomSource.Sample
+  isSpec: "True"
+  fullName: RandomToolbox.UnityRandomSource.Sample
+  nameWithType: UnityRandomSource.Sample
 - uid: RandomToolbox.UnityRandomSource.Save
   name: Save()
   href: api/RandomToolbox.UnityRandomSource.html#RandomToolbox_UnityRandomSource_Save
