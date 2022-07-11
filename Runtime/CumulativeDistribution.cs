@@ -26,6 +26,23 @@ namespace RandomToolbox
             else Debug.Log("probabilityDensity param must have at least two keys");
         }
 
+        public CumulativeDistribution(Func<float, float> f, float from, float to, int sampleSteps)
+        {
+            Curve ProbabilityDensityIntegral = Curve.Integrate(f, from, to, sampleSteps);
+
+            InverseCumulativeDistribution = Curve.Invert(ProbabilityDensityIntegral);
+        }
+
+        public float GetValue(UnityRandomSource random)
+        {
+            return GetValue(random.value);
+        }
+
+        public float GetValue(UnityRandomSourceSO so)
+        {
+            return GetValue(so.Instance.value);
+        }
+
         public float GetValue(float value)
         {
             return InverseCumulativeDistribution.Evaluate(
@@ -51,14 +68,14 @@ namespace RandomToolbox
 
         public float Evaluate(float x)
         {
-            float clampedX = Mathf.Clamp(x, _points[0].x, _points[_points.Length - 1].x);
+            float clampedX = Mathf.Clamp(x, _min.x, _max.x);
 
-            for (int i=0; i < _points.Length-1; i++)
+            for (int i=1; i < _points.Length; i++)
             {
                 if (_points[i].x >= clampedX)
                 {
-                    float xInterpolate = Mathf.InverseLerp(_points[i].x, _points[i + 1].x, x);
-                    return Mathf.Lerp(_points[i].y, _points[i+1].y, xInterpolate);
+                    float xInterpolate = Mathf.InverseLerp(_points[i-1].x, _points[i].x, x);
+                    return Mathf.Lerp(_points[i-1].y, _points[i].y, xInterpolate);
                 }
             }
 
