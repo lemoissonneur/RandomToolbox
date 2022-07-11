@@ -6,6 +6,8 @@ A bunch of tools to help you keep your game randomness under control.
 - Protecte your gameplay from external tools making call to the UnityEngine.Random singleton
 - Set probability of occurence when polling from a list with custom drawers
 ![probabilityDrawer](https://raw.githubusercontent.com/lemoissonneur/RandomToolbox/main/Documentation%7E/resources/Probability.gif "probabilityDrawer")
+- Continous distribution, manage probability of occurence on a continuous range with animationCurve
+![probabilityDrawer](https://raw.githubusercontent.com/lemoissonneur/RandomToolbox/main/Documentation%7E/resources/Distribution.gif "Distribution")
 - Tests
 
 ## Installation

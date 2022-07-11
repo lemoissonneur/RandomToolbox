@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "com.lemoissonneur.randomtoolbox",
   "displayName": "Random Toolbox",
   "description": "A pack of tools to manage the random part of your game",
@@ -26,7 +26,7 @@
       "description": "Use multiples random number sources with independants seeds.",
       "path": "Samples~/Random Sources"
     },
-	  {
+    {
       "displayName": "Manage probability with partitions",
       "description": "Use partitioons to manage the probability of occurence of objects in a list.",
       "path": "Samples~/Probability and Partitions"
