@@ -51,5 +51,28 @@ namespace RandomToolbox.Samples
             public int someInt;
             public string someString;
         }
+
+        [Space]
+        [Space]
+        [Space]
+        [Space]
+        [Space]
+
+        [TextArea]
+        public string ContinuousDistribution =
+            "You can also use AnimationCurve to manage probability for number on a continuous range." +
+            "the X axis is your polling range, like [0, 1] or [0, 12.7]" +
+            "and the Y axis is the probability scale." +
+            "Use the CumulativeDistribution class to sample from the animationCurve (see code)" +
+            "Here the chance of getting a 0 or 1 is null while the most probable is 0.5";
+        public AnimationCurve Density;
+        public void Method()
+        {
+            // instantiate
+            CumulativeDistribution distribution = new CumulativeDistribution(Density, 1000);
+
+            // this will return a value in the range of the animationcurve x axis
+            float value = distribution.GetValue(myRandom);
+        }
     }
 }
